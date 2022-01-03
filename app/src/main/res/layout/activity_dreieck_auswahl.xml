@@ -9,7 +9,7 @@
     <Button
             android:text="Umfang"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/btUmfang"/>
+            android:layout_height="wrap_content" android:id="@+id/btDUmfang"/>
     <Button
             android:text="zurück"
             android:layout_width="wrap_content"

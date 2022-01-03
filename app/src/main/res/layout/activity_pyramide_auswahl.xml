@@ -5,14 +5,14 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".DreiDAuswahl" android:orientation="vertical">
+        tools:context=".PyramideAuswahl" android:orientation="vertical">
 
     <Button
-            android:text="Pyramide"
+            android:text="Umfang"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/btPyramide"/>
+            android:layout_height="wrap_content" android:id="@+id/btPUmfang"/>
     <Button
             android:text="Zurück"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/btZurueck3DA"/>
+            android:layout_height="wrap_content" android:id="@+id/btZurueckPA"/>
 </LinearLayout>
