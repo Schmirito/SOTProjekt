@@ -22,7 +22,7 @@ public class DreieckUmfang extends AppCompatActivity {
         etUa = findViewById(R.id.etUa);
         etUb = findViewById(R.id.etUb);
         etUc = findViewById(R.id.etUc);
-        btZurueckDU =findViewById(R.id.btZurueckDA);
+        btZurueckDU =findViewById(R.id.btZurueckDU);
 
         btZurueckDU.setOnClickListener(View -> clickedZurueckDU());
 
