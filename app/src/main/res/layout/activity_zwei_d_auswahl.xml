@@ -11,10 +11,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:id="@+id/btDreieck"/>
     <Button
-            android:text="Viereck"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/btViereck"/>
-    <Button
             android:text="Zurück"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/btZurueck2DA"/>

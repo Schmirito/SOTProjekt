@@ -8,7 +8,6 @@ import android.os.Bundle;
 public class ZweiDAuswahl extends AppCompatActivity {
 
     Button btDreieck;
-    Button btViereck;
     Button btZurueck;
 
     @Override
@@ -17,7 +16,6 @@ public class ZweiDAuswahl extends AppCompatActivity {
         setContentView(R.layout.activity_zwei_d_auswahl);
         
         btDreieck = findViewById(R.id.btDreieck);
-        btViereck = findViewById(R.id.btViereck);
         btZurueck = findViewById(R.id.btZurueck2DA);
         
         btDreieck.setOnClickListener(View -> clickedDreieck());
