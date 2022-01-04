@@ -21,6 +21,7 @@ public class DreieckUmfang extends AppCompatActivity {
     }
 
     private void clickedZDU() {
-        Intent iZDU =
+        Intent iZDU = new Intent(this, DreieckAuswahl.class);
+        startActivity(iZDU);
     }
 }
