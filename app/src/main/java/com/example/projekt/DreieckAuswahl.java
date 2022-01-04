@@ -7,21 +7,28 @@ import android.os.Bundle;
 
 public class DreieckAuswahl extends AppCompatActivity {
 
-    Button btUmfang;
+    Button btDFI;
     Button btZurueckDA;
+    Button btDU;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dreieck_auswahl);
 
-        btUmfang = findViewById(R.id.btDAFI);
+        btDFI = findViewById(R.id.btDFI);
         btZurueckDA = findViewById(R.id.btZurueckDA);
+        btDU = findViewById(R.id.btDU);
 
-        btUmfang.setOnClickListener(View -> clickedUmfang());
+        btDFI.setOnClickListener(View -> clickedDFI());
         btZurueckDA.setOnClickListener(View -> clickedZurueckDA());
+        btDU.setOnClickListener(View -> clickedDU());
 
+    }
 
+    private void clickedDU() {
+        Intent iDU = new Intent(this, DreieckUmfang.class);
+        startActivity(iDU);
     }
 
     private void clickedZurueckDA() {
@@ -29,7 +36,7 @@ public class DreieckAuswahl extends AppCompatActivity {
         startActivity(iZDA);
     }
 
-    private void clickedUmfang() {
+    private void clickedDFI() {
         Intent iDU = new Intent(this, DreieckFlaeche.class);
         startActivity(iDU);
     }
