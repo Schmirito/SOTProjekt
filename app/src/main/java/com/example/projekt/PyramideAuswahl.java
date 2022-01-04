@@ -9,6 +9,7 @@ public class PyramideAuswahl extends AppCompatActivity {
 
     Button btPUmfang;
     Button btZurueckPA;
+    Button btPOberflaeche;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,9 +18,16 @@ public class PyramideAuswahl extends AppCompatActivity {
         
         btPUmfang = findViewById(R.id.btPVolumen);
         btZurueckPA = findViewById(R.id.btZurueckPA);
+        btPOberflaeche = findViewById(R.id.btPOberflaeche);
 
         btPUmfang.setOnClickListener(View -> clickedPU());
         btZurueckPA.setOnClickListener(View -> clickedZPA());
+        btPOberflaeche.setOnClickListener(View -> clickedPOI());
+    }
+
+    private void clickedPOI() {
+        Intent iPOI = new Intent(this, PyramideOberflaeche.class);
+        startActivity(iPOI);
     }
 
     private void clickedZPA() {
