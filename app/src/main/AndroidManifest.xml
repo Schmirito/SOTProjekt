@@ -15,7 +15,7 @@
         </activity>
         <activity android:name=".PyramideAuswahl">
         </activity>
-        <activity android:name=".DreieckUmfang">
+        <activity android:name=".DreieckFlaeche">
         </activity>
         <activity android:name=".DreiDAuswahl">
         </activity>

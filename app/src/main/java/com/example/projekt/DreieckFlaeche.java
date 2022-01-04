@@ -6,22 +6,18 @@ import android.widget.EditText;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class DreieckUmfang extends AppCompatActivity {
+public class DreieckFlaeche extends AppCompatActivity {
 
     EditText etUa;
-    EditText etUb;
-    EditText etUc;
 
     Button btZurueckDU;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dreieck_umfang);
+        setContentView(R.layout.activity_dreieck_flaeche);
 
         etUa = findViewById(R.id.etUa);
-        etUb = findViewById(R.id.etUb);
-        etUc = findViewById(R.id.etUc);
         btZurueckDU =findViewById(R.id.btZurueckDU);
 
         btZurueckDU.setOnClickListener(View -> clickedZurueckDU());

@@ -5,15 +5,19 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".DreieckUmfang" android:orientation="vertical">
+        tools:context=".DreieckFlaeche" android:orientation="vertical">
     <Button
             android:text="zurück"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/btZurueckDU"/>
+    <TextView
+            android:text="Formel: 1/2 * a * h"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView"/>
     <ImageView
             android:layout_width="match_parent"
-            android:layout_height="267dp" app:srcCompat="@drawable/dreieck_allgemein_0_ca"
-            android:id="@+id/imageView2"/>
+            android:layout_height="wrap_content" app:srcCompat="@drawable/dreieck_fl_cheninhalt"
+            android:id="@+id/imageView4"/>
     <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -25,14 +29,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="b ="
+            android:text="h ="
             android:ems="10"
-            android:id="@+id/etUb"/>
+            android:id="@+id/etDFIh"/>
     <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="c ="
+            android:text="Flächeninhalt ="
             android:ems="10"
-            android:id="@+id/etUc"/>
+            android:id="@+id/etDFI"/>
 </LinearLayout>
