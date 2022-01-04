@@ -28,7 +28,7 @@ public class PyramideAuswahl extends AppCompatActivity {
     }
 
     private void clickedPU() {
-        Intent iPU = new Intent(this,PyramideUmfang.class);
+        Intent iPU = new Intent(this, PyramideVolumen.class);
         startActivity(iPU);
     }
 }

@@ -5,14 +5,14 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class PyramideUmfang extends AppCompatActivity {
+public class PyramideVolumen extends AppCompatActivity {
 
     Button btZurueckPU;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pyramide_Volumen);
+        setContentView(R.layout.activity_pyramide_volumen);
 
         btZurueckPU = findViewById(R.id.btZurueckPU);
 
