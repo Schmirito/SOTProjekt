@@ -17,7 +17,7 @@
             android:layout_height="wrap_content" android:id="@+id/tvPFOI"/>
     <ImageView
             android:layout_width="match_parent"
-            android:layout_height="282dp" app:srcCompat="@drawable/pyramide_volumen_etc"
+            android:layout_height="268dp" app:srcCompat="@drawable/pyramide_volumen_etc"
             android:id="@+id/imageView"/>
     <EditText
             android:layout_width="match_parent"
