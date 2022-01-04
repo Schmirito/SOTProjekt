@@ -6,6 +6,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".DreieckUmfang" android:orientation="vertical">
+    <Button
+            android:text="zurück"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/btZurueckDU"/>
     <ImageView
             android:layout_width="match_parent"
             android:layout_height="267dp" app:srcCompat="@drawable/dreieck_allgemein_0_ca"
@@ -31,8 +35,4 @@
             android:text="c ="
             android:ems="10"
             android:id="@+id/etUc"/>
-    <Button
-            android:text="zurück"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/btZurueckDU"/>
 </LinearLayout>

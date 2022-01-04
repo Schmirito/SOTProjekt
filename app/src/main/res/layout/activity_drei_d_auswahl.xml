@@ -8,11 +8,11 @@
         tools:context=".DreiDAuswahl" android:orientation="vertical">
 
     <Button
-            android:text="Pyramide"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/btPyramide"/>
-    <Button
             android:text="Zurück"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/btZurueck3DA"/>
+    <Button
+            android:text="Pyramide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/btPyramide"/>
 </LinearLayout>

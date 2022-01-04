@@ -7,11 +7,11 @@
         android:layout_height="match_parent"
         tools:context=".DreieckAuswahl" android:orientation="vertical">
     <Button
-            android:text="Umfang"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/btDUmfang"/>
-    <Button
             android:text="zurück"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/btZurueckDA"/>
+    <Button
+            android:text="Umfang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/btDUmfang"/>
 </LinearLayout>

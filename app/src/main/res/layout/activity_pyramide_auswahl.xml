@@ -8,11 +8,11 @@
         tools:context=".PyramideAuswahl" android:orientation="vertical">
 
     <Button
-            android:text="Umfang"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/btPUmfang"/>
-    <Button
             android:text="Zurück"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/btZurueckPA"/>
+    <Button
+            android:text="Umfang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/btPUmfang"/>
 </LinearLayout>
