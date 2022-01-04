@@ -11,7 +11,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/btZurueckDA"/>
     <Button
+            android:text="Umfang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/btDAU"/>
+    <Button
             android:text="Flächeninhalt"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/btDFlaecheninhalt"/>
+            android:layout_height="wrap_content" android:id="@+id/btDAFI"/>
 </LinearLayout>

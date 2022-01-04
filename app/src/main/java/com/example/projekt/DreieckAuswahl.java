@@ -15,7 +15,7 @@ public class DreieckAuswahl extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dreieck_auswahl);
 
-        btUmfang = findViewById(R.id.btDFlaecheninhalt);
+        btUmfang = findViewById(R.id.btDAFI);
         btZurueckDA = findViewById(R.id.btZurueckDA);
 
         btUmfang.setOnClickListener(View -> clickedUmfang());

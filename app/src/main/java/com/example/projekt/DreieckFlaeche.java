@@ -10,7 +10,7 @@ public class DreieckFlaeche extends AppCompatActivity {
 
     EditText etUa;
 
-    Button btZurueckDU;
+    Button btZurueckDFI;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,9 +18,9 @@ public class DreieckFlaeche extends AppCompatActivity {
         setContentView(R.layout.activity_dreieck_flaeche);
 
         etUa = findViewById(R.id.etUa);
-        btZurueckDU =findViewById(R.id.btZurueckDU);
+        btZurueckDFI =findViewById(R.id.btZurueckDFI);
 
-        btZurueckDU.setOnClickListener(View -> clickedZurueckDU());
+        btZurueckDFI.setOnClickListener(View -> clickedZurueckDU());
 
     }
 

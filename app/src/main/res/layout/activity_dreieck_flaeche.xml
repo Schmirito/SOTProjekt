@@ -9,7 +9,7 @@
     <Button
             android:text="zurück"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/btZurueckDU"/>
+            android:layout_height="wrap_content" android:id="@+id/btZurueckDFI"/>
     <TextView
             android:text="Formel: 1/2 * a * h"
             android:layout_width="match_parent"
