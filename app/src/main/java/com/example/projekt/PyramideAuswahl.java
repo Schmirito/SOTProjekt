@@ -15,7 +15,7 @@ public class PyramideAuswahl extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pyramide_auswahl);
         
-        btPUmfang = findViewById(R.id.btPUmfang);
+        btPUmfang = findViewById(R.id.btPVolumen);
         btZurueckPA = findViewById(R.id.btZurueckPA);
 
         btPUmfang.setOnClickListener(View -> clickedPU());
