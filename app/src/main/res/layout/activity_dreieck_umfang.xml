@@ -11,4 +11,40 @@
             android:text="zurück"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/btZurueckDU"/>
+    <TextView
+            android:text="Formel: a + b + c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView2"/>
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/dreieck_fl_cheninhalt"
+            android:id="@+id/imageView2"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="a ="
+            android:ems="10"
+            android:id="@+id/editTextTextPersonName"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="b ="
+            android:ems="10"
+            android:id="@+id/editTextTextPersonName2"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="c ="
+            android:ems="10"
+            android:id="@+id/editTextTextPersonName4"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Umfang ="
+            android:ems="10"
+            android:id="@+id/editTextTextPersonName5"/>
 </LinearLayout>
