@@ -5,7 +5,8 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".DreieckUmfang" android:orientation="vertical">
+        tools:context=".DreieckUmfang" android:orientation="vertical"
+        android:padding="16dp">
 
     <Button
             android:text="zurück"
@@ -14,37 +15,57 @@
     <TextView
             android:text="Formel: a + b + c"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/textView2"/>
+            android:layout_height="wrap_content" android:id="@+id/textView2"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
     <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content" app:srcCompat="@drawable/dreieck_fl_cheninhalt"
             android:id="@+id/imageView2"/>
+    <TextView
+            android:text="a:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView9" android:textColor="@color/black"
+            android:textSize="16sp"/>
     <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:text="a ="
+            android:inputType="number|numberDecimal"
             android:ems="10"
-            android:id="@+id/editTextTextPersonName"/>
+            android:id="@+id/etDUa"/>
+    <TextView
+            android:text="b:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView10" android:textColor="@color/black"
+            android:textSize="16sp"/>
     <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:text="b ="
+            android:inputType="number|numberDecimal"
             android:ems="10"
-            android:id="@+id/editTextTextPersonName2"/>
+            android:id="@+id/etDUb"/>
+    <TextView
+            android:text="c:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView11" android:textColor="@color/black"
+            android:textSize="16sp"/>
     <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:text="c ="
+            android:inputType="number|numberDecimal"
             android:ems="10"
-            android:id="@+id/editTextTextPersonName4"/>
-    <EditText
+            android:id="@+id/etDUc"/>
+
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Berechne"
+            android:id="@+id/btDUB">
+
+    </Button>
+    <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:text="Umfang ="
-            android:ems="10"
-            android:id="@+id/editTextTextPersonName5"/>
+            android:layout_height="wrap_content" android:id="@+id/tvDUE"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+
+
 </LinearLayout>
