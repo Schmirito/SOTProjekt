@@ -15,30 +15,42 @@
     <TextView
             android:text="Formel: a²  + 2 * a * hs"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/tvPFOI"/>
+            android:layout_height="wrap_content" android:id="@+id/tvPFOI"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
     <ImageView
             android:layout_width="match_parent"
             android:layout_height="268dp" app:srcCompat="@drawable/pyramide_volumen_etc"
             android:id="@+id/imageView"/>
+    <TextView
+            android:text="a:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView9" android:textColor="@color/black"
+            android:textSize="16sp"/>
     <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:text="a ="
+            android:inputType="number|numberDecimal"
             android:ems="10"
-            android:id="@+id/etPOIa"/>
+            android:id="@+id/etPOA"/>
+    <TextView
+            android:text="hs:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView10" android:textColor="@color/black"
+            android:textSize="16sp"/>
     <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:text="hs ="
+            android:inputType="number|numberDecimal"
             android:ems="10"
-            android:id="@+id/etPOIhs"/>
-    <EditText
+            android:id="@+id/etDFh"/>
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Berechne"
+            android:id="@+id/btDFB"/>
+
+    <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:text="Oberflächeninhalt ="
-            android:ems="10"
-            android:id="@+id/editTextTextPersonName3"/>
+            android:layout_height="wrap_content" android:id="@+id/tvDFE"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
 </LinearLayout>
