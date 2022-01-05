@@ -38,11 +38,27 @@ public class DreieckUmfang extends AppCompatActivity {
     }
 
     private void clickedDUB() {
-        double dua = Double.parseDouble(etDUa.getText().toString());
+       /* double dua = Double.parseDouble(etDUa.getText().toString());
         double dub = Double.parseDouble(etDUb.getText().toString());
         double duc = Double.parseDouble(etDUc.getText().toString());
         double due = dua+dub+duc;
-        tvDUE.setText("Umfang: " + due);
+        tvDUE.setText("Umfang: " + due);*/
+
+        String duastr = etDUa.getText().toString();
+        String dubstr = etDUb.getText().toString();
+        String ducstr = etDUc.getText().toString();
+
+        if (duastr.length()==0||dubstr.length()==0||ducstr.length()==0){
+            tvDUE.setText("Bitte alle geforderten Werte eintragen!");
+
+        }
+        else {
+            double dua = Double.parseDouble(duastr);
+            double dub = Double.parseDouble(dubstr);
+            double duc = Double.parseDouble(ducstr);
+            double due = dua + dub + duc;
+            tvDUE.setText("Umfang: " + due);
+        }
 
 
 

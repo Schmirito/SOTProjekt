@@ -39,11 +39,6 @@ public class DreieckFlaeche extends AppCompatActivity {
     private void clickedDFB() {
         String dfastr = etDFa.getText().toString();
         String dfhstr = etDFh.getText().toString();
-        //double dfa = Double.parseDouble(etDFa.getText().toString());
-        //double dfh = Double.parseDouble(etDFh.getText().toString());
-
-
-
 
         if (dfastr.length()==0||dfhstr.length()==0){
             tvDFE.setText("Bitte alle geforderten Werte eintragen!");
