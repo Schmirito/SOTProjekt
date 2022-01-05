@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class DreieckUmfang extends AppCompatActivity {
-    //Test
+
 
     Button btZurueckDU;
     EditText etDUa;
@@ -38,11 +38,7 @@ public class DreieckUmfang extends AppCompatActivity {
     }
 
     private void clickedDUB() {
-       /* double dua = Double.parseDouble(etDUa.getText().toString());
-        double dub = Double.parseDouble(etDUb.getText().toString());
-        double duc = Double.parseDouble(etDUc.getText().toString());
-        double due = dua+dub+duc;
-        tvDUE.setText("Umfang: " + due);*/
+
 
         String duastr = etDUa.getText().toString();
         String dubstr = etDUb.getText().toString();
