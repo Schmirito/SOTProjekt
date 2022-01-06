@@ -12,7 +12,38 @@
             android:text="zurück"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/btZurueckRFI"/>
+    <TextView
+            android:text="Formel: a * b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView18"/>
     <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content" app:srcCompat="@drawable/rechteck" android:id="@+id/imageView6"/>
+    <TextView
+            android:text="a:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView19"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etRFa"/>
+    <TextView
+            android:text="b:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView20"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etRFb"/>
+    <Button
+            android:text="Berechnen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/btRFB"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/tvRFe"/>
 </LinearLayout>
