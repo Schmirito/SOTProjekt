@@ -12,7 +12,7 @@ public class RechteckFlaeche extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_viereck_flaeche);
+        setContentView(R.layout.activity_rechteck_flaeche);
 
         btZurueckRFI = findViewById(R.id.btZurueckRFI);
 

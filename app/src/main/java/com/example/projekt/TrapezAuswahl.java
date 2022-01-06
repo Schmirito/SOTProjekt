@@ -9,6 +9,7 @@ public class TrapezAuswahl extends AppCompatActivity {
     
     Button btZurueckTA;
     Button btTFI;
+    Button btTU;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,9 +18,16 @@ public class TrapezAuswahl extends AppCompatActivity {
         
         btZurueckTA = findViewById(R.id.btZurueckTA);
         btTFI = findViewById(R.id.btTFI);
+        btTU = findViewById(R.id.btTU);
         
         btZurueckTA.setOnClickListener(View -> clickedZTA());
         btTFI.setOnClickListener(View -> clickedTFI());
+        btTU.setOnClickListener(View -> clickedTU());
+    }
+
+    private void clickedTU() {
+        Intent iTU = new Intent(this, TrapezUmfang.class);
+        startActivity(iTU);
     }
 
     private void clickedTFI() {

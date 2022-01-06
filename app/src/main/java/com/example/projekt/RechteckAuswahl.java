@@ -14,7 +14,7 @@ public class RechteckAuswahl extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_Rechteck_auswahl);
+        setContentView(R.layout.activity_rechteck_auswahl);
 
         btZurueckRA = findViewById(R.id.btZurueckRA);
         btRU = findViewById(R.id.btRU);

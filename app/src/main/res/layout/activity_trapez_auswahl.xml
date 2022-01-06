@@ -15,4 +15,8 @@
             android:text="Flächeninhalt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:id="@+id/btTFI"/>
+    <Button
+            android:text="Umfang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/btTU"/>
 </LinearLayout>
