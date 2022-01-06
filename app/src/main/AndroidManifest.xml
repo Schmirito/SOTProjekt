@@ -9,6 +9,10 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/Theme.Projekt">
+        <activity android:name=".ViereckUmfang">
+        </activity>
+        <activity android:name=".ViereckAuswahl">
+        </activity>
         <activity android:name=".PyramideAuswahl">
         </activity>
         <activity android:name=".DreieckUmfang">

@@ -9,6 +9,7 @@ public class ZweiDAuswahl extends AppCompatActivity {
 
     Button btDreieck;
     Button btZurueck;
+    Button btViereck;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,11 +18,17 @@ public class ZweiDAuswahl extends AppCompatActivity {
         
         btDreieck = findViewById(R.id.btDreieck);
         btZurueck = findViewById(R.id.btZurueck2DA);
-        
+        btViereck = findViewById(R.id.btViereck);
+
         btDreieck.setOnClickListener(View -> clickedDreieck());
         btZurueck.setOnClickListener(View -> clickedZurueck2D());
+        btViereck.setOnClickListener(View -> clickedViereck());
         
-        
+    }
+
+    private void clickedViereck() {
+        Intent iViereck = new Intent(this, ViereckAuswahl.class);
+        startActivity(iViereck);
     }
 
     private void clickedZurueck2D() {
