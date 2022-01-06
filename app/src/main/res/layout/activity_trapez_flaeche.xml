@@ -11,4 +11,11 @@
             android:text="zurück"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/btZurueckTFI"/>
+    <TextView
+            android:text="Formel: (a+c) /2 * h"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView3"/>
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/trapez" android:id="@+id/imageView5"/>
 </LinearLayout>

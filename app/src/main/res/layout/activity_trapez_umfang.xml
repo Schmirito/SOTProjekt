@@ -11,4 +11,11 @@
             android:text="zurück"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/btZurueckTU"/>
+    <TextView
+            android:text="Formel: a + b + c + d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView4"/>
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/trapez" android:id="@+id/imageView7"/>
 </LinearLayout>
