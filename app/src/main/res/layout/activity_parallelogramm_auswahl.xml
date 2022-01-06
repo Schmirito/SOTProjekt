@@ -14,7 +14,7 @@
     <Button
             android:text="Umfang"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/btParaU"/>
+            android:layout_height="wrap_content" android:id="@+id/btParaUmfang"/>
     <Button
             android:text="Flächeninhalt"
             android:layout_width="match_parent"

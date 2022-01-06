@@ -9,6 +9,7 @@ public class ParallelogrammAuswahl extends AppCompatActivity {
 
     Button btZurueckParaA;
     Button btParaFlaeche;
+    Button btParaUmfang;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,10 +18,16 @@ public class ParallelogrammAuswahl extends AppCompatActivity {
 
         btZurueckParaA = findViewById(R.id.btZurueckParaA);
         btParaFlaeche = findViewById(R.id.btParaFlaeche);
+        btParaUmfang = findViewById(R.id.btParaUmfang);
 
         btZurueckParaA.setOnClickListener(View -> clickedZParaA());
         btParaFlaeche.setOnClickListener(View -> clickedParaF());
+        btParaUmfang.setOnClickListener(View -> clickedParaU());
+    }
 
+    private void clickedParaU() {
+        Intent iParaU = new Intent(this, ParallelogrammUmfang.class);
+        startActivity(iParaU);
     }
 
     private void clickedParaF() {
