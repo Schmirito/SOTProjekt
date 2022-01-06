@@ -12,4 +12,7 @@
             android:text="zurück"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/btZurueckRFI"/>
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/rechteck" android:id="@+id/imageView6"/>
 </LinearLayout>

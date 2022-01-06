@@ -16,11 +16,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:id="@+id/btDreieck"/>
     <Button
-            android:text="Rechteck"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/btRechteck"/>
-    <Button
             android:text="Trapez"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:id="@+id/btTrapez"/>
+    <Button
+            android:text="Rechteck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/btRechteck"/>
 </LinearLayout>
