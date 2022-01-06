@@ -25,7 +25,8 @@ public class ViereckAuswahl extends AppCompatActivity {
     }
 
     private void clickedVU() {
-        Intent iVU = new Intent(this, )
+        Intent iVU = new Intent(this, ViereckUmfang.class);
+        startActivity(iVU);
     }
 
     private void clickedZVA() {
