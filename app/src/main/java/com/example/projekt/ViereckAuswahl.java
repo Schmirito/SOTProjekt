@@ -22,6 +22,12 @@ public class ViereckAuswahl extends AppCompatActivity {
 
         btZurueckVA.setOnClickListener(View -> clickedZVA());
         btVU.setOnClickListener(View -> clickedVU());
+        btVFI.setOnClickListener(View -> clickedVFI());
+    }
+
+    private void clickedVFI() {
+        Intent iVFI = new Intent(this, ViereckFlaeche.class);
+        startActivity(iVFI);
     }
 
     private void clickedVU() {
