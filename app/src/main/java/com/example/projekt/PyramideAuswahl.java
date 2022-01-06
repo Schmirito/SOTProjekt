@@ -7,36 +7,29 @@ import android.os.Bundle;
 
 public class PyramideAuswahl extends AppCompatActivity {
 
-    Button btPUmfang;
+    Button btPDreieck;
     Button btZurueckPA;
-    Button btPOberflaeche;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pyramide_auswahl);
-        
-        btPUmfang = findViewById(R.id.btPVolumen);
-        btZurueckPA = findViewById(R.id.btZurueckPA);
-        btPOberflaeche = findViewById(R.id.btPOberflaeche);
 
-        btPUmfang.setOnClickListener(View -> clickedPU());
+        btZurueckPA = findViewById(R.id.btZurueckPA);
+        btPDreieck = findViewById(R.id.btPDreieck);
+
         btZurueckPA.setOnClickListener(View -> clickedZPA());
-        btPOberflaeche.setOnClickListener(View -> clickedPOI());
+        btPDreieck.setOnClickListener(View -> clickedPD());
+
     }
 
-    private void clickedPOI() {
-        Intent iPOI = new Intent(this, PyramideOberflaeche.class);
-        startActivity(iPOI);
+    private void clickedPD() {
+        Intent iPD = new Intent(this, PyramideDreieckAuswahl.class);
+        startActivity(iPD);
     }
 
     private void clickedZPA() {
         Intent iZPA = new Intent(this, DreiDAuswahl.class);
         startActivity(iZPA);
-    }
-
-    private void clickedPU() {
-        Intent iPU = new Intent(this, PyramideVolumen.class);
-        startActivity(iPU);
     }
 }

@@ -9,13 +9,15 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/Theme.Projekt">
+        <activity android:name=".PyramideAuswahl">
+        </activity>
         <activity android:name=".DreieckUmfang">
         </activity>
-        <activity android:name=".PyramideOberflaeche">
+        <activity android:name=".PyramideDreieckOberflaeche">
         </activity>
-        <activity android:name=".PyramideVolumen">
+        <activity android:name=".PyramideDreieckVolumen">
         </activity>
-        <activity android:name=".PyramideAuswahl">
+        <activity android:name=".PyramideDreieckAuswahl">
         </activity>
         <activity android:name=".DreieckFlaeche">
         </activity>
