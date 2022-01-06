@@ -9,7 +9,8 @@ public class ZweiDAuswahl extends AppCompatActivity {
 
     Button btDreieck;
     Button btZurueck;
-    Button btViereck;
+    Button btRechteck;
+    Button btTrapez;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,17 +19,23 @@ public class ZweiDAuswahl extends AppCompatActivity {
         
         btDreieck = findViewById(R.id.btDreieck);
         btZurueck = findViewById(R.id.btZurueck2DA);
-        btViereck = findViewById(R.id.btViereck);
+        btRechteck = findViewById(R.id.btRechteck);
+        btTrapez = findViewById(R.id.btTrapez);
 
         btDreieck.setOnClickListener(View -> clickedDreieck());
         btZurueck.setOnClickListener(View -> clickedZurueck2D());
-        btViereck.setOnClickListener(View -> clickedViereck());
-        
+        btRechteck.setOnClickListener(View -> clickedRechteck());
+        btTrapez.setOnClickListener(View -> clickedTrapez());
     }
 
-    private void clickedViereck() {
-        Intent iViereck = new Intent(this, ViereckAuswahl.class);
-        startActivity(iViereck);
+    private void clickedTrapez() {
+        Intent iTrapez = new Intent(this,TrapezAuswahl.class);
+        startActivity(iTrapez);
+    }
+
+    private void clickedRechteck() {
+        Intent iRechteck = new Intent(this, RechteckAuswahl.class);
+        startActivity(iRechteck);
     }
 
     private void clickedZurueck2D() {

@@ -5,23 +5,23 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class ViereckFlaeche extends AppCompatActivity {
+public class RechteckFlaeche extends AppCompatActivity {
 
-    Button btZurueckVFI;
+    Button btZurueckRFI;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_viereck_flaeche);
 
-        btZurueckVFI = findViewById(R.id.btZurueckVFI);
+        btZurueckRFI = findViewById(R.id.btZurueckRFI);
 
-        btZurueckVFI.setOnClickListener(View -> clickedZVFI());
+        btZurueckRFI.setOnClickListener(View -> clickedZRFI());
 
     }
 
-    private void clickedZVFI() {
-        Intent iZVFI =  new Intent(this, ViereckAuswahl.class);
-        startActivity(iZVFI);
+    private void clickedZRFI() {
+        Intent iZRFI =  new Intent(this, RechteckAuswahl.class);
+        startActivity(iZRFI);
     }
 }

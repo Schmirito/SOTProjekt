@@ -5,22 +5,22 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class ViereckUmfang extends AppCompatActivity {
+public class RechteckUmfang extends AppCompatActivity {
 
-    Button btZurueckVU;
+    Button btZurueckRU;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_viereck_umfang);
 
-        btZurueckVU = findViewById(R.id.btZurueckVU);
+        btZurueckRU = findViewById(R.id.btZurueckRU);
 
-        btZurueckVU.setOnClickListener(View -> clickedZVU());
+        btZurueckRU.setOnClickListener(View -> clickedZRU());
     }
 
-    private void clickedZVU() {
-        Intent iZVU = new Intent(this,ViereckAuswahl.class);
-        startActivity(iZVU);
+    private void clickedZRU() {
+        Intent iZRU = new Intent(this, RechteckAuswahl.class);
+        startActivity(iZRU);
     }
 }
