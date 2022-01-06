@@ -9,6 +9,10 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/Theme.Projekt">
+        <activity android:name=".ParallelogrammFlaeche">
+        </activity>
+        <activity android:name=".ParallelogrammAuswahl">
+        </activity>
         <activity android:name=".TrapezUmfang">
         </activity>
         <activity android:name=".TrapezFlaeche">

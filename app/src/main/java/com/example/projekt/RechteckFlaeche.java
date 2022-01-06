@@ -42,7 +42,7 @@ public class RechteckFlaeche extends AppCompatActivity {
             double rfb = Double.parseDouble(rfbstr);
             double rfe = rfa * rfb;
 
-            tvRFe.setText("Flächeninhalt: " + rfe + "cm");
+            tvRFe.setText("Flächeninhalt: " + rfe + "cm²");
         }
     }
 

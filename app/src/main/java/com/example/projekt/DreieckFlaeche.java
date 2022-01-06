@@ -48,7 +48,7 @@ public class DreieckFlaeche extends AppCompatActivity {
             double dfa = Double.parseDouble(dfastr);
             double dfh = Double.parseDouble(dfhstr);
             double dfe = 0.5 * dfa * dfh;
-            tvDFE.setText("Flächeninhalt: " + dfe);
+            tvDFE.setText("Flächeninhalt: " + dfe + "cm²");
         }
     }
 

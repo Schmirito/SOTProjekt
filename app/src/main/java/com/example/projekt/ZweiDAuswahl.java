@@ -11,6 +11,7 @@ public class ZweiDAuswahl extends AppCompatActivity {
     Button btZurueck;
     Button btRechteck;
     Button btTrapez;
+    Button btParallelogramm;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,11 +22,18 @@ public class ZweiDAuswahl extends AppCompatActivity {
         btZurueck = findViewById(R.id.btZurueck2DA);
         btRechteck = findViewById(R.id.btRechteck);
         btTrapez = findViewById(R.id.btTrapez);
+        btParallelogramm = findViewById(R.id.btParallelogramm);
 
         btDreieck.setOnClickListener(View -> clickedDreieck());
         btZurueck.setOnClickListener(View -> clickedZurueck2D());
         btRechteck.setOnClickListener(View -> clickedRechteck());
         btTrapez.setOnClickListener(View -> clickedTrapez());
+        btParallelogramm.setOnClickListener(View -> clickedParallelogramm());
+    }
+
+    private void clickedParallelogramm() {
+        Intent iParallelogramm = new Intent(this, ParallelogrammAuswahl.class);
+        startActivity(iParallelogramm);
     }
 
     private void clickedTrapez() {

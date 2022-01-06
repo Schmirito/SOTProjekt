@@ -48,7 +48,7 @@ public class TrapezFlaeche extends AppCompatActivity {
             double tfic = Double.parseDouble(tficstr);
             double tfih = Double.parseDouble(tfihstr);
             double tfie = (tfia + tfic) * 0.5 * tfih;
-            tvTFIE.setText("Flächeninhalt: " + tfie + "cm");
+            tvTFIE.setText("Flächeninhalt: " + tfie + "cm²");
         }
     }
 
