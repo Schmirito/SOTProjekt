@@ -11,4 +11,49 @@
             android:text="zurück"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/btZurueckPriDV"/>
+    <TextView
+            android:text="Formel: (1/2 * a * ha) * h"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView41"/>
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="251dp" app:srcCompat="@drawable/dreiecksprisma1"
+            android:id="@+id/imageView19"/>
+    <TextView
+            android:text="a:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView42"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etPriDVa"/>
+    <TextView
+            android:text="ha:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView43"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etPriDVha"/>
+    <TextView
+            android:text="h:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView44"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etPriDVh"/>
+    <Button
+            android:text="Berechnen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/btPriDVB"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/tvPriDVe"/>
 </LinearLayout>
