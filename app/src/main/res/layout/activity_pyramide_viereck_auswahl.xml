@@ -15,4 +15,8 @@
             android:text="Volumen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:id="@+id/btPVVolumen"/>
+    <Button
+            android:text="Oberflächeninhalt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/btPVOberflaeche"/>
 </LinearLayout>

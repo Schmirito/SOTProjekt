@@ -35,7 +35,7 @@ public class PyramideViereckVolumen extends AppCompatActivity {
         String pvvhstr = etPVVh.getText().toString();
 
         if (pvvastr.length()==0||pvvhstr.length()==0){
-            tvPVVe.setText("Bitte alle geforderten Werte eingeben");
+            tvPVVe.setText("Bitte alle geforderten Werte eingeben!");
         }
         else{
             double pvva = Double.parseDouble(pvvastr);

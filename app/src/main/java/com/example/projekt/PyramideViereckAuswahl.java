@@ -11,6 +11,7 @@ public class PyramideViereckAuswahl extends AppCompatActivity {
 
     Button btZurueckPVA;
     Button btPVVolumen;
+    Button btPVOberflaeche;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,9 +20,16 @@ public class PyramideViereckAuswahl extends AppCompatActivity {
 
         btZurueckPVA = findViewById(R.id.btZurueckPVA);
         btPVVolumen = findViewById(R.id.btPVVolumen);
+        btPVOberflaeche = findViewById(R.id.btPVOberflaeche);
 
         btZurueckPVA.setOnClickListener(View -> clickedZPVA());
         btPVVolumen.setOnClickListener(View -> clickedPVV());
+        btPVOberflaeche.setOnClickListener(View -> clickedPVO());
+    }
+
+    private void clickedPVO() {
+        Intent iPVO = new Intent(this,PyramideViereckOberlaeche.class);
+        startActivity(iPVO);
     }
 
     private void clickedPVV() {
