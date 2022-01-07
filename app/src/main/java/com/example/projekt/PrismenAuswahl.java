@@ -8,8 +8,8 @@ import android.os.Bundle;
 public class PrismenAuswahl extends AppCompatActivity {
 
     Button btZurueckPriA;
-    Button btPriADreieck;
-    Button btPriDOberflaeche;
+    Button btPriDreieck;
+    Button btPriFuenfeck;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,15 +17,20 @@ public class PrismenAuswahl extends AppCompatActivity {
         setContentView(R.layout.activity_prismen_auswahl);
 
         btZurueckPriA = findViewById(R.id.btZurueckPriA);
-        btPriADreieck = findViewById(R.id.btPriADreieck);
-        btPriDOberflaeche = findViewById(R.id.btPriDOberflaeche);
+        btPriDreieck = findViewById(R.id.btPriDreieck);
+        btPriFuenfeck = findViewById(R.id.btPriFuenfeck);
 
         btZurueckPriA.setOnClickListener(View -> clickedZPriA());
-        btPriADreieck.setOnClickListener(View -> clickedPriAD());
-
+        btPriDreieck.setOnClickListener(View -> clickedPriD());
+        btPriFuenfeck.setOnClickListener(View -> clickedPriF());
     }
 
-    private void clickedPriAD() {
+    private void clickedPriF() {
+        Intent iPriF = new Intent(this,PrismenFuenfeckAuswahl.class);
+        startActivity(iPriF);
+    }
+
+    private void clickedPriD() {
         Intent iPriAD = new Intent(this,PrismenDreieckAuswahl.class);
         startActivity(iPriAD);
     }
