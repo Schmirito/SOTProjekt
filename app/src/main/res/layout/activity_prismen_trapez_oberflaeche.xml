@@ -17,7 +17,7 @@
             android:layout_height="wrap_content" android:id="@+id/textView56"/>
     <ImageView
             android:layout_width="match_parent"
-            android:layout_height="116dp" app:srcCompat="@drawable/trapezfoermiges_prisma_aufgabe"
+            android:layout_height="86dp" app:srcCompat="@drawable/trapezfoermiges_prisma_aufgabe"
             android:id="@+id/imageView17"/>
     <TextView
             android:text="a:"
