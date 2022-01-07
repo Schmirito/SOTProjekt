@@ -35,7 +35,7 @@ public class WuerfelVolumen extends AppCompatActivity {
             tvWVe.setText("Bitte alle geforderten Werte angeben!");
         }
         else{
-            double wva = Double.compare(wvastr);
+            double wva = Double.parseDouble(wvastr);
             double wve = wva * wva * wva;
 
             tvWVe.setText("Volumen: " + wve + "cm³");
