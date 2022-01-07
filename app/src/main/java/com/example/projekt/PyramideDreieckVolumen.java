@@ -44,7 +44,7 @@ public class PyramideDreieckVolumen extends AppCompatActivity {
             double pdva = Double.parseDouble(pdvastr);
             double pdvd = Double.parseDouble(pdvdstr);
             double pdvh = Double.parseDouble(pdvhstr);
-            double pdve = 0.33 * (0.5 * pdva * pdvd) * pdvh;
+            double pdve = 0.333 * (0.5 * pdva * pdvd) * pdvh;
 
             tvPDVe.setText("Volumen: " + pdve + "cm³");
         }
