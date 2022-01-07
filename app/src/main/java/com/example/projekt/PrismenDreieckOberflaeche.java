@@ -32,6 +32,7 @@ public class PrismenDreieckOberflaeche extends AppCompatActivity {
         etPriDOc = findViewById(R.id.etPriDOc);
         etPriDOh = findViewById(R.id.etPriDOh);
         etPriDOha = findViewById(R.id.etPriDOha);
+        tvPriDOe = findViewById(R.id.tvPriDOe);
 
         btZurueckPriDO.setOnClickListener(View -> clickedZPriDO());
         btPriDOB.setOnClickListener(View -> clickedPriDOB());

@@ -17,7 +17,7 @@
             android:layout_height="wrap_content" android:id="@+id/textView45"/>
     <ImageView
             android:layout_width="match_parent"
-            android:layout_height="208dp" app:srcCompat="@drawable/dreiecksprisma1"
+            android:layout_height="141dp" app:srcCompat="@drawable/dreiecksprisma1"
             android:id="@+id/imageView14"/>
     <TextView
             android:text="a:"
@@ -25,7 +25,7 @@
             android:layout_height="wrap_content" android:id="@+id/textView46"/>
     <EditText
             android:layout_width="match_parent"
-            android:layout_height="24dp"
+            android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
             android:id="@+id/etPriDOa"/>
@@ -35,7 +35,7 @@
             android:layout_height="wrap_content" android:id="@+id/textView47"/>
     <EditText
             android:layout_width="match_parent"
-            android:layout_height="20dp"
+            android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
             android:id="@+id/etPriDOb"/>
@@ -45,27 +45,27 @@
             android:layout_height="wrap_content" android:id="@+id/textView48"/>
     <EditText
             android:layout_width="match_parent"
-            android:layout_height="22dp"
+            android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
             android:id="@+id/etPriDOc"/>
     <TextView
-            android:text="ha"
+            android:text="ha:"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:id="@+id/textView49"/>
     <EditText
             android:layout_width="match_parent"
-            android:layout_height="23dp"
+            android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
             android:id="@+id/etPriDOha"/>
     <TextView
-            android:text="ha"
+            android:text="h:"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:id="@+id/textView50"/>
     <EditText
             android:layout_width="match_parent"
-            android:layout_height="23dp"
+            android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
             android:id="@+id/etPriDOh"/>
