@@ -13,14 +13,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/btZurueckPOI"/>
     <TextView
-            android:text="Formel: "
+            android:text="Formel: 1/2 * a * d + 3 * 1/2 * a * ha  "
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:id="@+id/tvPFOI"
             android:textSize="17dp"
             android:textColor="@color/black"/>
     <ImageView
             android:layout_width="match_parent"
-            android:layout_height="241dp" app:srcCompat="@drawable/dreieckpyramide" android:id="@+id/imageView"/>
+            android:layout_height="209dp" app:srcCompat="@drawable/dreieckpyramide" android:id="@+id/imageView"/>
     <TextView
             android:text="a:"
             android:layout_width="match_parent"
@@ -31,7 +31,17 @@
             android:layout_height="wrap_content"
             android:inputType="number|numberDecimal"
             android:ems="10"
-            android:id="@+id/etPOA"/>
+            android:id="@+id/etPDOa"/>
+    <TextView
+            android:text="d:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView30"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etPDOd"/>
     <TextView
             android:text="ha:"
             android:layout_width="match_parent"
@@ -42,14 +52,14 @@
             android:layout_height="wrap_content"
             android:inputType="number|numberDecimal"
             android:ems="10"
-            android:id="@+id/etPOHS"/>
+            android:id="@+id/etPDOha"/>
     <Button android:layout_width="match_parent" android:layout_height="wrap_content"
             android:text="Berechne"
-            android:id="@+id/btPOB"/>
+            android:id="@+id/btPDOB"/>
 
     <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/tvPOE"
+            android:layout_height="wrap_content" android:id="@+id/tvPDOe"
             android:textColor="@color/black"
             android:textSize="20dp"/>
 </LinearLayout>

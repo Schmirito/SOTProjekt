@@ -16,4 +16,8 @@
             android:text="Dreieckige Grundfläche"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:id="@+id/btPDreieck"/>
+    <Button
+            android:text="Viereckige Grundfläche"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/btPViereck"/>
 </LinearLayout>
