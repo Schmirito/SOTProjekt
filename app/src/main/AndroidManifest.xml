@@ -9,11 +9,11 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/Theme.Projekt">
-        <activity android:name=".PrismenFuenfeckOberflaeche">
+        <activity android:name=".PrismenTrapezOberflaeche">
         </activity>
-        <activity android:name=".PrismenFuenfeckVolumen">
+        <activity android:name=".PrismenTrapezVolumen">
         </activity>
-        <activity android:name=".PrismenFuenfeckAuswahl">
+        <activity android:name=".PrismenTrapezAuswahl">
         </activity>
         <activity android:name=".PrismenDreieckAuswahl">
         </activity>

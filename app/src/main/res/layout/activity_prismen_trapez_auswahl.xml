@@ -5,18 +5,18 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".PrismenFuenfeckAuswahl" android:orientation="vertical">
+        tools:context=".PrismenTrapezAuswahl" android:orientation="vertical">
 
     <Button
             android:text="zurück"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/btZurueckPriFA"/>
+            android:layout_height="wrap_content" android:id="@+id/btZurueckPriTA"/>
     <Button
             android:text="Volumen"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/btPriFVolumen"/>
+            android:layout_height="wrap_content" android:id="@+id/btPriTVolumen"/>
     <Button
             android:text="Oberflächeninhalt"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/btPriFOberflaeche"/>
+            android:layout_height="wrap_content" android:id="@+id/btPriTOberflaeche"/>
 </LinearLayout>

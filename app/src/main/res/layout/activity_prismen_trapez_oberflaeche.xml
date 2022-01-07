@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".PrismenTrapezOberflaeche" android:orientation="vertical">
+
+    <Button
+            android:text="zurück"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/btZurueckPriTO"/>
+    <TextView
+            android:text="Formel: 0.5 * (a + c) * h +(a + b + c + d) * hk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView56"/>
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="116dp" app:srcCompat="@drawable/trapezfoermiges_prisma_aufgabe"
+            android:id="@+id/imageView17"/>
+    <TextView
+            android:text="a:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView57"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etPriTOa"/>
+    <TextView
+            android:text="b:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView58"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etPriTOb"/>
+    <TextView
+            android:text="c:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView59"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etPriTOc"/>
+    <TextView
+            android:text="d:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView60"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etPriTOd"/>
+    <TextView
+            android:text="h:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView61"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etPriTOh"/>
+    <TextView
+            android:text="hk:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView62"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etPriTOhk"/>
+    <Button
+            android:text="Berechnen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/btPriTOB"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/tvPriTOe"/>
+</LinearLayout>

@@ -9,7 +9,7 @@ public class PrismenAuswahl extends AppCompatActivity {
 
     Button btZurueckPriA;
     Button btPriDreieck;
-    Button btPriFuenfeck;
+    Button btPriTrapez;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,16 +18,16 @@ public class PrismenAuswahl extends AppCompatActivity {
 
         btZurueckPriA = findViewById(R.id.btZurueckPriA);
         btPriDreieck = findViewById(R.id.btPriDreieck);
-        btPriFuenfeck = findViewById(R.id.btPriFuenfeck);
+        btPriTrapez = findViewById(R.id.btPriTrapez);
 
         btZurueckPriA.setOnClickListener(View -> clickedZPriA());
         btPriDreieck.setOnClickListener(View -> clickedPriD());
-        btPriFuenfeck.setOnClickListener(View -> clickedPriF());
+        btPriTrapez.setOnClickListener(View -> clickedPriT());
     }
 
-    private void clickedPriF() {
-        Intent iPriF = new Intent(this,PrismenFuenfeckAuswahl.class);
-        startActivity(iPriF);
+    private void clickedPriT() {
+        Intent iPriT = new Intent(this,PrismenTrapezAuswahl.class);
+        startActivity(iPriT);
     }
 
     private void clickedPriD() {
