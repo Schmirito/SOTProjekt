@@ -12,7 +12,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/btZurueckPriA"/>
     <Button
-            android:text="Dreiecks Grundseite"
+            android:text="Dreieckige Grundfläche"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/btPriDreieck"/>
+            android:layout_height="wrap_content" android:id="@+id/btPriADreieck"/>
 </LinearLayout>
