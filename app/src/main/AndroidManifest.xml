@@ -9,6 +9,14 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/Theme.Projekt">
+        <activity android:name=".PrismenDreieckOberflaeche">
+        </activity>
+        <activity android:name=".PrismenDreieckVolumen">
+        </activity>
+        <activity android:name=".PrismenDreieckAuswahl">
+        </activity>
+        <activity android:name=".PrismenAuswahl">
+        </activity>
         <activity android:name=".WuerfelOberflaeche">
         </activity>
         <activity android:name=".WuerfelVolumen">
