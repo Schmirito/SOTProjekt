@@ -11,4 +11,69 @@
             android:text="zurück"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/btZurueckPriDO"/>
+    <TextView
+            android:text="Formel: 2 * (1/2 * a * ha) + (a + b + c) * h"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView45"/>
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="208dp" app:srcCompat="@drawable/dreiecksprisma1"
+            android:id="@+id/imageView14"/>
+    <TextView
+            android:text="a:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView46"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etPriDOa"/>
+    <TextView
+            android:text="b:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView47"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etPriDOb"/>
+    <TextView
+            android:text="c:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView48"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etPriDOc"/>
+    <TextView
+            android:text="ha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView49"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etPriDOha"/>
+    <TextView
+            android:text="ha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView50"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etPriDOh"/>
+    <Button
+            android:text="Berechnen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/btPriDOB"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/tvPriDOe"/>
 </LinearLayout>

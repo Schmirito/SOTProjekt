@@ -9,6 +9,8 @@ public class PrismenDreieckAuswahl extends AppCompatActivity {
 
     Button btZurueckPriDA;
     Button btPriDVolumen;
+    Button btPriDOberflaeche;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,9 +19,16 @@ public class PrismenDreieckAuswahl extends AppCompatActivity {
 
         btZurueckPriDA = findViewById(R.id.btZurueckPriDA);
         btPriDVolumen = findViewById(R.id.btPriDVolumen);
+        btPriDOberflaeche = findViewById(R.id.btPriDOberflaeche);
 
         btZurueckPriDA.setOnClickListener(View -> clickedZPriDA());
         btPriDVolumen.setOnClickListener(View -> clickedPriDV());
+        btPriDOberflaeche.setOnClickListener(View -> clickedPriDO());
+    }
+
+    private void clickedPriDO() {
+        Intent iPriDO = new Intent(this,PrismenDreieckOberflaeche.class);
+        startActivity(iPriDO);
     }
 
     private void clickedPriDV() {

@@ -22,12 +22,7 @@ public class PrismenAuswahl extends AppCompatActivity {
 
         btZurueckPriA.setOnClickListener(View -> clickedZPriA());
         btPriADreieck.setOnClickListener(View -> clickedPriAD());
-        btPriDOberflaeche.setOnClickListener(View -> clickedPriDO());
-    }
 
-    private void clickedPriDO() {
-        Intent iPriDO = new Intent(this,PrismenDreieckOberflaeche.class);
-        startActivity(iPriDO);
     }
 
     private void clickedPriAD() {
