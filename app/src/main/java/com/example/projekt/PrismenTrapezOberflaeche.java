@@ -32,6 +32,7 @@ public class PrismenTrapezOberflaeche extends AppCompatActivity {
         etPriTOd = findViewById(R.id.etPriTOd);
         etPriTOh = findViewById(R.id.etPriTOh);
         etPriTOhk = findViewById(R.id.etPriTOhk);
+        tvPriTOe = findViewById(R.id.tvPriTOe);
 
         btZurueckPriTO.setOnClickListener(View -> clickedZPriTO());
         btPriTOB.setOnClickListener(View -> clickedPriTOB());
