@@ -10,6 +10,7 @@ import java.io.BufferedReader;
 public class PyramideViereckAuswahl extends AppCompatActivity {
 
     Button btZurueckPVA;
+    Button btPVVolumen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,9 +18,15 @@ public class PyramideViereckAuswahl extends AppCompatActivity {
         setContentView(R.layout.activity_pyramide_viereck_auswahl);
 
         btZurueckPVA = findViewById(R.id.btZurueckPVA);
+        btPVVolumen = findViewById(R.id.btPVVolumen);
 
         btZurueckPVA.setOnClickListener(View -> clickedZPVA());
+        btPVVolumen.setOnClickListener(View -> clickedPVV());
+    }
 
+    private void clickedPVV() {
+        Intent iPVV = new Intent(this, PyramideViereckVolumen.class);
+        startActivity(iPVV);
     }
 
     private void clickedZPVA() {
