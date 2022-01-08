@@ -36,7 +36,7 @@ public class FuenfeckAuswahl extends AppCompatActivity {
     }
 
     private void clickedZF() {
-        Intent iZF = new Intent(this,ZweiDAuswahl.class);
+        Intent iZF = new Intent(this,VieleckAuswahl.class);
         startActivity(iZF);
     }
 }

@@ -12,17 +12,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/btZurueck2DA"/>
     <Button
-            android:text="Dreieck"
+            android:text="Vieleck"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/btDreieck"/>
+            android:layout_height="wrap_content" android:id="@+id/btVieleck"/>
     <Button
             android:text="Rechteck"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:id="@+id/btRechteck"/>
-    <Button
-            android:text="Fünfeck"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/btFuenfeck"/>
     <Button
             android:text="Trapez"
             android:layout_width="match_parent"

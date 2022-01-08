@@ -7,37 +7,35 @@ import android.os.Bundle;
 
 public class ZweiDAuswahl extends AppCompatActivity {
 
-    Button btDreieck;
     Button btZurueck;
     Button btRechteck;
     Button btTrapez;
     Button btParallelogramm;
-    Button btFuenfeck;
+    Button btVieleck;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_zwei_d_auswahl);
         
-        btDreieck = findViewById(R.id.btDreieck);
         btZurueck = findViewById(R.id.btZurueck2DA);
         btRechteck = findViewById(R.id.btRechteck);
         btTrapez = findViewById(R.id.btTrapez);
         btParallelogramm = findViewById(R.id.btParallelogramm);
-        btFuenfeck = findViewById(R.id.btFuenfeck);
+        btVieleck = findViewById(R.id.btVieleck);
 
-        btDreieck.setOnClickListener(View -> clickedDreieck());
         btZurueck.setOnClickListener(View -> clickedZurueck2D());
         btRechteck.setOnClickListener(View -> clickedRechteck());
         btTrapez.setOnClickListener(View -> clickedTrapez());
         btParallelogramm.setOnClickListener(View -> clickedParallelogramm());
-        btFuenfeck.setOnClickListener(View -> clickedFuenfeck());
+        btVieleck.setOnClickListener(View -> clickedVieleck());
     }
 
-    private void clickedFuenfeck() {
-        Intent iFuenfeck = new Intent(this, FuenfeckAuswahl.class);
-        startActivity(iFuenfeck);
+    private void clickedVieleck() {
+        Intent iVieleck = new Intent(this,VieleckAuswahl.class);
+        startActivity(iVieleck);
     }
+
 
     private void clickedParallelogramm() {
         Intent iParallelogramm = new Intent(this, ParallelogrammAuswahl.class);
@@ -57,10 +55,5 @@ public class ZweiDAuswahl extends AppCompatActivity {
     private void clickedZurueck2D() {
         Intent iZ2D = new Intent(this, ErsteActivity.class);
         startActivity(iZ2D);
-    }
-
-    private void clickedDreieck() {
-        Intent iDreieck = new Intent(this, DreieckAuswahl.class);
-        startActivity(iDreieck);
     }
 }
