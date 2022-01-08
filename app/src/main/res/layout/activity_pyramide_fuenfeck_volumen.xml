@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".PyramideFuenfeckVolumen" android:baselineAligned="false" android:orientation="vertical">
+    <Button
+            android:text="zurück"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/btZurueckPFV"/>
+    <TextView
+            android:text="Formel: 1/3 * (5 * 1/2 * a * ha) * h"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView65"/>
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="235dp" app:srcCompat="@drawable/fuenfseitige_pyramide_0"
+            android:id="@+id/imageView20"/>
+    <TextView
+            android:text="a:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView66"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etPFVa"/>
+    <TextView
+            android:text="ha:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView67"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etPFVha"/>
+    <TextView
+            android:text="h:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView68"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etPFVh"/>
+    <Button
+            android:text="Berechnen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/btPFVB"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/tvPFVe"/>
+</LinearLayout>

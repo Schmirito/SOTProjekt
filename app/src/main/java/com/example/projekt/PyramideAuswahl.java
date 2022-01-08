@@ -10,6 +10,7 @@ public class PyramideAuswahl extends AppCompatActivity {
     Button btZurueckPA;
     Button btPDreieck;
     Button btPViereck;
+    Button btPFuenfeck;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,10 +20,17 @@ public class PyramideAuswahl extends AppCompatActivity {
         btZurueckPA = findViewById(R.id.btZurueckPA);
         btPDreieck = findViewById(R.id.btPDreieck);
         btPViereck = findViewById(R.id.btPViereck);
+        btPFuenfeck = findViewById(R.id.btPFuenfeck);
 
         btZurueckPA.setOnClickListener(View -> clickedZPA());
         btPDreieck.setOnClickListener(View -> clickedPD());
         btPViereck.setOnClickListener(View -> clickedPV());
+        btPFuenfeck.setOnClickListener(View -> clickedPF());
+    }
+
+    private void clickedPF() {
+        Intent iPF = new Intent(this,PyramideFuenfeckAuswahl.class);
+        startActivity(iPF);
     }
 
     private void clickedPV() {
