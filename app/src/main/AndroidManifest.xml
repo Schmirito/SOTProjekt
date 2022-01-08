@@ -9,6 +9,18 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/Theme.Projekt">
+        <activity android:name=".KugelVolumen">
+        </activity>
+        <activity android:name=".KugelOberflaeche">
+        </activity>
+        <activity android:name=".KugelAuswahl">
+        </activity>
+        <activity android:name=".KreisFlaeche">
+        </activity>
+        <activity android:name=".KreisUmfang">
+        </activity>
+        <activity android:name=".KreisAuswahl">
+        </activity>
         <activity android:name=".FuenfeckUmfang">
         </activity>
         <activity android:name=".FuenfeckFlaeche">
