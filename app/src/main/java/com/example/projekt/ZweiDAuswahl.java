@@ -11,7 +11,8 @@ public class ZweiDAuswahl extends AppCompatActivity {
     Button btRechteck;
     Button btTrapez;
     Button btParallelogramm;
-    Button btVieleck;
+    Button btDreieck;
+    Button btFuenfeck;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,20 +23,21 @@ public class ZweiDAuswahl extends AppCompatActivity {
         btRechteck = findViewById(R.id.btRechteck);
         btTrapez = findViewById(R.id.btTrapez);
         btParallelogramm = findViewById(R.id.btParallelogramm);
-        btVieleck = findViewById(R.id.btVieleck);
+        btDreieck = findViewById(R.id.btDreieck);
+        btFuenfeck = findViewById(R.id.btFuenfeck);
 
         btZurueck.setOnClickListener(View -> clickedZurueck2D());
         btRechteck.setOnClickListener(View -> clickedRechteck());
         btTrapez.setOnClickListener(View -> clickedTrapez());
         btParallelogramm.setOnClickListener(View -> clickedParallelogramm());
-        btVieleck.setOnClickListener(View -> clickedVieleck());
+        btDreieck.setOnClickListener(View -> clickedDreieck());
+        btFuenfeck.setOnClickListener(View -> clickedFuenfeck());
     }
 
-    private void clickedVieleck() {
-        Intent iVieleck = new Intent(this,VieleckAuswahl.class);
-        startActivity(iVieleck);
+    private void clickedFuenfeck() {
+        Intent iFuenfeck = new Intent(this, FuenfeckAuswahl.class);
+        startActivity(iFuenfeck);
     }
-
 
     private void clickedParallelogramm() {
         Intent iParallelogramm = new Intent(this, ParallelogrammAuswahl.class);
@@ -50,6 +52,11 @@ public class ZweiDAuswahl extends AppCompatActivity {
     private void clickedRechteck() {
         Intent iRechteck = new Intent(this, RechteckAuswahl.class);
         startActivity(iRechteck);
+    }
+
+    private void clickedDreieck() {
+        Intent iDreieck = new Intent(this, DreieckAuswahl.class);
+        startActivity(iDreieck);
     }
 
     private void clickedZurueck2D() {

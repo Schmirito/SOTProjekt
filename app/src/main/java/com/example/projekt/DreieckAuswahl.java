@@ -32,7 +32,7 @@ public class DreieckAuswahl extends AppCompatActivity {
     }
 
     private void clickedZurueckDA() {
-        Intent iZDA = new Intent(this, VieleckAuswahl.class);
+        Intent iZDA = new Intent(this, ZweiDAuswahl.class);
         startActivity(iZDA);
     }
 
