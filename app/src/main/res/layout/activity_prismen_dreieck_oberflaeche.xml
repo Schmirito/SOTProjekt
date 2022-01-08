@@ -27,7 +27,7 @@
     <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
+            android:inputType="number|numberDecimal"
             android:ems="10"
             android:id="@+id/etPriDOa"/>
     <TextView
@@ -37,7 +37,7 @@
     <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
+            android:inputType="number|numberDecimal"
             android:ems="10"
             android:id="@+id/etPriDOb"/>
     <TextView
@@ -47,7 +47,7 @@
     <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
+            android:inputType="number|numberDecimal"
             android:ems="10"
             android:id="@+id/etPriDOc"/>
     <TextView
@@ -57,7 +57,7 @@
     <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
+            android:inputType="number|numberDecimal"
             android:ems="10"
             android:id="@+id/etPriDOha"/>
     <TextView
@@ -67,7 +67,7 @@
     <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
+            android:inputType="number|numberDecimal"
             android:ems="10"
             android:id="@+id/etPriDOh"/>
     <Button

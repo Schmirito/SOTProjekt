@@ -27,7 +27,7 @@
     <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
+            android:inputType="number|numberDecimal"
             android:ems="10"
             android:id="@+id/etPVVa"/>
     <TextView
@@ -37,7 +37,7 @@
     <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
+            android:inputType="number|numberDecimal"
             android:ems="10"
             android:id="@+id/etPVVh"/>
     <Button
