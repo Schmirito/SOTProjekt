@@ -40,7 +40,7 @@ public class PyramideViereckVolumen extends AppCompatActivity {
         else{
             double pvva = Double.parseDouble(pvvastr);
             double pvvh = Double.parseDouble(pvvhstr);
-            double pvve = 0.33 * (pvva * pvva) * pvvh;
+            double pvve = 0.33335 * (pvva * pvva) * pvvh;
 
             tvPVVe.setText("Volumen: " + pvve + "cm³");
         }

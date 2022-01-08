@@ -44,7 +44,7 @@ public class PyramideFuenfeckVolumen extends AppCompatActivity {
             double pfva = Double.parseDouble(pfvastr);
             double pfvh = Double.parseDouble(pfvhstr);
             double pfvha = Double.parseDouble(pfvhastr);
-            double pfve = 0.33 * (0.5 * pfva * pfvha) * pfvh;
+            double pfve = 0.33335 * 5 *(0.5 * pfva * pfvha) * pfvh;
 
             tvPFVe.setText("Volumen: " + pfve + "cm³");
         }
