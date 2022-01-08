@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".FuenfeckUmfang" android:orientation="vertical">
+
+    <Button
+            android:text="zurück"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/btZurueckFU"/>
+    <TextView
+            android:text="Formel: a + b + c + d + e"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView74"/>
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="146dp" app:srcCompat="@drawable/fuenfeck" android:id="@+id/imageView21"/>
+    <TextView
+            android:text="a:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView75"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etFUa"/>
+    <TextView
+            android:text="b:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView76"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etFUb"/>
+    <TextView
+            android:text="c:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView77"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etFUc"/>
+    <TextView
+            android:text="d:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView78"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etFUd"/>
+    <TextView
+            android:text="e:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView79"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etFUe"/>
+    <Button
+            android:text="Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/btFUB"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/tvFUErgebniss"/>
+</LinearLayout>

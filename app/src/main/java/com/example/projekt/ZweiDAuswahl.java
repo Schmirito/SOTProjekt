@@ -12,6 +12,7 @@ public class ZweiDAuswahl extends AppCompatActivity {
     Button btRechteck;
     Button btTrapez;
     Button btParallelogramm;
+    Button btFuenfeck;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,12 +24,19 @@ public class ZweiDAuswahl extends AppCompatActivity {
         btRechteck = findViewById(R.id.btRechteck);
         btTrapez = findViewById(R.id.btTrapez);
         btParallelogramm = findViewById(R.id.btParallelogramm);
+        btFuenfeck = findViewById(R.id.btFuenfeck);
 
         btDreieck.setOnClickListener(View -> clickedDreieck());
         btZurueck.setOnClickListener(View -> clickedZurueck2D());
         btRechteck.setOnClickListener(View -> clickedRechteck());
         btTrapez.setOnClickListener(View -> clickedTrapez());
         btParallelogramm.setOnClickListener(View -> clickedParallelogramm());
+        btFuenfeck.setOnClickListener(View -> clickedFuenfeck());
+    }
+
+    private void clickedFuenfeck() {
+        Intent iFuenfeck = new Intent(this, FuenfeckAuswahl.class);
+        startActivity(iFuenfeck);
     }
 
     private void clickedParallelogramm() {

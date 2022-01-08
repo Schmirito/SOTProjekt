@@ -9,6 +9,12 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/Theme.Projekt">
+        <activity android:name=".FuenfeckUmfang">
+        </activity>
+        <activity android:name=".FuenfeckFlaeche">
+        </activity>
+        <activity android:name=".FuenfeckAuswahl">
+        </activity>
         <activity android:name=".PyramideFuenfeckOberflaeche">
         </activity>
         <activity android:name=".PyramideFuenfeckVolumen">
