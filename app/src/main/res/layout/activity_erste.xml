@@ -15,7 +15,8 @@
     <Button
             android:text="2D"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/bt2D"/>
+            android:layout_height="wrap_content"
+            android:id="@+id/bt2D"/>
     <Button
             android:text="3D"
             android:layout_width="match_parent"
