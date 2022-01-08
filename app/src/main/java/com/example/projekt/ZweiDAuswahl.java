@@ -13,6 +13,7 @@ public class ZweiDAuswahl extends AppCompatActivity {
     Button btParallelogramm;
     Button btDreieck;
     Button btFuenfeck;
+    Button btKreis;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,7 @@ public class ZweiDAuswahl extends AppCompatActivity {
         btParallelogramm = findViewById(R.id.btParallelogramm);
         btDreieck = findViewById(R.id.btDreieck);
         btFuenfeck = findViewById(R.id.btFuenfeck);
+        btKreis = findViewById(R.id.btKreis);
 
         btZurueck.setOnClickListener(View -> clickedZurueck2D());
         btRechteck.setOnClickListener(View -> clickedRechteck());
@@ -32,6 +34,12 @@ public class ZweiDAuswahl extends AppCompatActivity {
         btParallelogramm.setOnClickListener(View -> clickedParallelogramm());
         btDreieck.setOnClickListener(View -> clickedDreieck());
         btFuenfeck.setOnClickListener(View -> clickedFuenfeck());
+        btKreis.setOnClickListener(View -> clickedKreis());
+    }
+
+    private void clickedKreis() {
+        Intent iKreis = new Intent(this, KreisAuswahl.class);
+        startActivity(iKreis);
     }
 
     private void clickedFuenfeck() {
