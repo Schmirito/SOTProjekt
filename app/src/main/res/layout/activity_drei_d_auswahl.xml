@@ -30,5 +30,10 @@
             android:text="Prismen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:id="@+id/btPrismen"/>
+    <Button
+            android:text="Kugel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/btKugel"/>
+
 </LinearLayout>
 </ScrollView>

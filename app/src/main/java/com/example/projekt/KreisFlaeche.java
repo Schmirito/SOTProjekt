@@ -41,7 +41,7 @@ public class KreisFlaeche extends AppCompatActivity {
     }
 
     private void clickedZKF() {
-        Intent iZKF = new Intent(this, KugelAuswahl.class);
+        Intent iZKF = new Intent(this, KreisAuswahl.class);
         startActivity(iZKF);
     }
 }
