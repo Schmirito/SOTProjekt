@@ -1,10 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".KugelVolumen">
+        tools:context=".KugelVolumen" android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+            android:text="zurück"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/btZurueckKV"/>
+    <TextView
+            android:text="Formel: 4/3 * π * r³"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView80"/>
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="216dp" app:srcCompat="@drawable/kugel" android:id="@+id/imageView23"/>
+    <TextView
+            android:text="r:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView81"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etKVr"/>
+    <Button
+            android:text="Berechnen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/btKVB"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/tvKVe"/>
+</LinearLayout>
