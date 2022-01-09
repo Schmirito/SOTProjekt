@@ -21,10 +21,6 @@
                 android:layout_height="wrap_content" android:id="@+id/textView2"
                 android:textSize="17dp"
                 android:textColor="@color/black"/>
-        <ImageView
-                android:layout_width="378dp"
-                android:layout_height="370dp" app:srcCompat="@drawable/kugel"
-                android:id="@+id/imageView2"/>
         <TextView
                 android:text="d:"
                 android:layout_width="match_parent"
