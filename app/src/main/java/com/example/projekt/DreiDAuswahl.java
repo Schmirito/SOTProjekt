@@ -33,7 +33,7 @@ public class DreiDAuswahl extends AppCompatActivity {
     }
 
     private void clickedKugel() {
-        Intent iKugel = new Intent(this,KugelAuswahl.class);
+        Intent iKugel = new Intent(this, KugelAuswahl.class);
         startActivity(iKugel);
     }
 

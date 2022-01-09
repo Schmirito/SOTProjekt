@@ -42,7 +42,7 @@ public class KreisUmfang extends AppCompatActivity {
     }
 
     private void clickedZKU() {
-        Intent iZKU = new Intent(this, KugelAuswahl.class);
+        Intent iZKU = new Intent(this, KreisAuswahl.class);
         startActivity(iZKU);
     }
 }
