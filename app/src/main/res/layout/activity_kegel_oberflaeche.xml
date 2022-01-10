@@ -15,7 +15,9 @@
     <TextView
             android:text="Formel: r² * π + r * π * s"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/textView83"/>
+            android:layout_height="wrap_content" android:id="@+id/textView83"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
     <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp" app:srcCompat="@drawable/wp_volumen_kegel_1_1024x576"
@@ -46,8 +48,12 @@
             android:layout_height="wrap_content" android:id="@+id/btKegelOB"/>
     <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/tvKegelOe"/>
+            android:layout_height="wrap_content" android:id="@+id/tvKegelOe"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
     <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/tvKegelOeG"/>
+            android:layout_height="wrap_content" android:id="@+id/tvKegelOeG"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
 </LinearLayout>
