@@ -75,7 +75,7 @@
             android:ems="10"
             android:id="@+id/etFUe"/>
     <Button
-            android:text="Button"
+            android:text="Berechne"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:id="@+id/btFUB"/>
     <TextView

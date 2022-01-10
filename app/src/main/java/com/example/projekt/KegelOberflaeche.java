@@ -16,6 +16,7 @@ public class KegelOberflaeche extends AppCompatActivity {
     EditText etKegelOr;
     EditText etKegelOs;
     TextView tvKegelOe;
+    TextView tvKegelOeG;
 
     double pi = Math.PI;
 
@@ -29,6 +30,7 @@ public class KegelOberflaeche extends AppCompatActivity {
         etKegelOr = findViewById(R.id.etKegelOr);
         etKegelOs = findViewById(R.id.etKegelOs);
         tvKegelOe = findViewById(R.id.tvKegelOe);
+        tvKegelOeG = findViewById(R.id.tvKegelOeG);
 
         btZurueckKegelO.setOnClickListener(View -> clickedZKegelO());
         btKegelOB.setOnClickListener(View -> clickedKegelOB());
@@ -46,7 +48,13 @@ public class KegelOberflaeche extends AppCompatActivity {
             double kegelos = Double.parseDouble(kegelosstr);
             double kegeloe = (kegelor * kegelor) * pi + kegelor * pi * kegelos;
 
-            tvKegelOe.setText("Oberflächeninhalt: " + kegeloe + "cm²");
+            tvKegelOe.setText("Oberflächeninhalt: " + kegeloe + " cm²");
+
+            double kegeloeg = kegeloe * 100;
+            kegeloeg = kegeloeg +0.5;
+            kegeloeg = (int) kegeloeg;
+            kegeloeg = (double) kegeloeg / 100;
+            tvKegelOeG.setText("Ergebnis gerundet: "+ kegeloeg + " cm²");
         }
     }
 

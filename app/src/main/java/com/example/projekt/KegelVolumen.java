@@ -14,6 +14,7 @@ public class KegelVolumen extends AppCompatActivity {
     EditText etKegelVr;
     EditText etKegelVh;
     TextView tvKegelVe;
+    TextView tvKegelVeG;
 
     double pi = Math.PI;
 
@@ -27,7 +28,8 @@ public class KegelVolumen extends AppCompatActivity {
         etKegelVr = findViewById(R.id.etKegelVr);
         etKegelVh = findViewById(R.id.etKegelVh);
         tvKegelVe = findViewById(R.id.tvKegelVe);
-        
+        tvKegelVeG = findViewById(R.id.tvKegelVeG);
+
         btZurueckKegelV.setOnClickListener(View -> clickedZKegelV());
         btKegelVB.setOnClickListener(View -> clickedKegelVB());
     }
@@ -44,7 +46,15 @@ public class KegelVolumen extends AppCompatActivity {
             double kegelvh = Double.parseDouble(kegelvhstr);
             double kegelve = 0.33335 * pi * (kegelvr * kegelvr) * kegelvh;
 
-            tvKegelVe.setText("Volumen: " + kegelve + "cm³");
+            tvKegelVe.setText("Volumen: " + kegelve + " cm³");
+
+
+
+            double kegelveg = kegelve * 100;
+            kegelveg = kegelveg +0.5;
+            kegelveg = (int) kegelveg;
+            kegelveg = (double) kegelveg / 100;
+            tvKegelVeG.setText("Ergebnis gerundet: "+ kegelveg + " cm³");
         }
     }
 
