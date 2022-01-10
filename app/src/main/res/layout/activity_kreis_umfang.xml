@@ -46,14 +46,14 @@
         <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/tvKUE"
-                android:textColor="@color/black"
-                android:textSize="20dp"/>
+                android:textSize="17dp"
+                android:textColor="@color/black"/>
 
         <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/tvKUEG"
-                android:textColor="@color/black"
-                android:textSize="20dp"/>
+                android:textSize="17dp"
+                android:textColor="@color/black"/>
 
 
 </LinearLayout>
