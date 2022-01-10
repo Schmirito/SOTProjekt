@@ -9,6 +9,12 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/Theme.Projekt">
+        <activity android:name=".KegelOberflaeche">
+        </activity>
+        <activity android:name=".KegelVolumen">
+        </activity>
+        <activity android:name=".KegelAuswahl">
+        </activity>
         <activity android:name=".KugelVolumen">
         </activity>
         <activity android:name=".KugelOberflaeche">
