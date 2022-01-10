@@ -20,7 +20,9 @@
     <TextView
             android:text="Formel: 1/3 * (1/2 * a * d) * h"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/tvPV"/>
+            android:layout_height="wrap_content" android:id="@+id/tvPV"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
     <ImageView
             android:layout_width="match_parent"
             android:layout_height="240dp" app:srcCompat="@drawable/dreieckpyramide"
@@ -61,9 +63,13 @@
             android:layout_height="wrap_content" android:id="@+id/btPDVB"/>
     <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/tvPDVe"/>
+            android:layout_height="wrap_content" android:id="@+id/tvPDVe"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
     <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/tvPDVeG"/>
+            android:layout_height="wrap_content" android:id="@+id/tvPDVeG"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
 </LinearLayout>
 </ScrollView>
