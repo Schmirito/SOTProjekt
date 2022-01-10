@@ -16,6 +16,7 @@ public class DreieckFlaeche extends AppCompatActivity {
     EditText etDFh;
     Button btDFB;
     TextView tvDFE;
+    TextView tvDFEG;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +34,7 @@ public class DreieckFlaeche extends AppCompatActivity {
         etDFa = findViewById(R.id.etDFa);
         etDFh = findViewById(R.id.etDFh);
         tvDFE = findViewById(R.id.tvDFE);
+        tvDFEG = findViewById(R.id.tvDFEG);
 
     }
 
@@ -49,6 +51,11 @@ public class DreieckFlaeche extends AppCompatActivity {
             double dfh = Double.parseDouble(dfhstr);
             double dfe = 0.5 * dfa * dfh;
             tvDFE.setText("Flächeninhalt: " + dfe + "cm²");
+            double dfeg = dfe * 100;
+            dfeg = dfeg +0.5;
+            dfeg = (int) dfeg;
+            dfeg = (double) dfeg / 100;
+            tvDFEG.setText("Ergebnis gerundet :"+ dfeg);
         }
     }
 

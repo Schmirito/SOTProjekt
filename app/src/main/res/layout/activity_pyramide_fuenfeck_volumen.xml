@@ -61,5 +61,8 @@
     <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:id="@+id/tvPFVe"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/tvPFVeG"/>
 </LinearLayout>
 </ScrollView>
