@@ -20,7 +20,9 @@
     <TextView
             android:text="Formel: 5 * (1/2 * a * ha) + 5 * (1/2 * a * hs)"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/textView63"/>
+            android:layout_height="wrap_content" android:id="@+id/textView63"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
     <ImageView
             android:layout_width="match_parent"
             android:layout_height="225dp" app:srcCompat="@drawable/fuenfseitige_pyramide_0"
@@ -61,9 +63,13 @@
             android:layout_height="wrap_content" android:id="@+id/btPFOB"/>
     <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/tvPFOe"/>
+            android:layout_height="wrap_content" android:id="@+id/tvPFOe"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
     <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/tvPFOeG"/>
+            android:layout_height="wrap_content" android:id="@+id/tvPFOeG"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
 </LinearLayout>
 </ScrollView>
