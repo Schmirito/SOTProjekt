@@ -19,6 +19,7 @@ public class PrismenDreieckOberflaeche extends AppCompatActivity {
     EditText etPriDOha;
     EditText etPriDOh;
     TextView tvPriDOe;
+    TextView tvPriDOeG;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +34,7 @@ public class PrismenDreieckOberflaeche extends AppCompatActivity {
         etPriDOh = findViewById(R.id.etPriDOh);
         etPriDOha = findViewById(R.id.etPriDOha);
         tvPriDOe = findViewById(R.id.tvPriDOe);
+        tvPriDOeG = findViewById(R.id.tvPriDOeG);
 
         btZurueckPriDO.setOnClickListener(View -> clickedZPriDO());
         btPriDOB.setOnClickListener(View -> clickedPriDOB());
@@ -57,6 +59,13 @@ public class PrismenDreieckOberflaeche extends AppCompatActivity {
             double pridoe = 2 * (0.5 * pridoa * pridoha) + (pridoa + pridob + pridoc) * pridoh;
 
             tvPriDOe.setText("Oberflächeninhalt: " + pridoe + "cm²");
+
+
+            double pridoeg = pridoe * 100;
+            pridoeg = pridoeg +0.5;
+            pridoeg = (int) pridoeg;
+            pridoeg = (double) pridoeg / 100;
+            tvPriDOeG.setText("Ergebnis gerundet :"+ pridoeg + " cm²");
         }
     }
 

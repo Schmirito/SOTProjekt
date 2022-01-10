@@ -17,6 +17,7 @@ public class FuenfeckUmfang extends AppCompatActivity {
     EditText etFUd;
     EditText etFUe;
     TextView tvFUErgebnis;
+    TextView tvFUErgebnisG;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,7 @@ public class FuenfeckUmfang extends AppCompatActivity {
         etFUd = findViewById(R.id.etFUd);
         etFUe = findViewById(R.id.etFUe);
         tvFUErgebnis = findViewById(R.id.tvFUErgebniss);
+        tvFUErgebnisG = findViewById(R.id.tvFUErgebnissG);
 
         btZurueckFU.setOnClickListener(View -> clickedZFU());
         btFUB.setOnClickListener(View -> clickedFUB());
@@ -54,7 +56,13 @@ public class FuenfeckUmfang extends AppCompatActivity {
             double fue = Double.parseDouble(fuestr);
             double fuErgebnis = fua + fub + fuc + fud + fue;
 
-            tvFUErgebnis.setText("Umfang: " + fuErgebnis + "cm");
+            tvFUErgebnis.setText("Umfang: " + fuErgebnis + " cm");
+
+            double fueg = fue * 100;
+            fueg = fueg +0.5;
+            fueg = (int) fueg;
+            fueg = (double) fueg / 100;
+            tvFUErgebnisG.setText("Ergebnis gerundet :"+ fueg + " cm");
         }
     }
 

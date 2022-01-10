@@ -14,6 +14,7 @@ public class PyramideViereckOberlaeche extends AppCompatActivity {
     EditText etPVOa;
     EditText etPVOha;
     TextView tvPVOe;
+    TextView tvPVOeG;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,7 @@ public class PyramideViereckOberlaeche extends AppCompatActivity {
         etPVOa = findViewById(R.id.etPVOa);
         etPVOha = findViewById(R.id.etPVOha);
         tvPVOe = findViewById(R.id.tvPVOe);
+        tvPVOeG = findViewById(R.id.tvPVOeG);
 
         btZurueckPVO.setOnClickListener(View -> clickedZPVO());
         btPVOB.setOnClickListener(View -> clickedPVOB());
@@ -42,7 +44,13 @@ public class PyramideViereckOberlaeche extends AppCompatActivity {
             double pvoha = Double.parseDouble(pvohastr);
             double pvoe = (pvoa * pvoa) + 4 * (0.5 * pvoa * pvoha);
 
-            tvPVOe.setText("Oberflächeninhalt: " + pvoe + "cm²");
+            tvPVOe.setText("Oberflächeninhalt: " + pvoe + " cm²");
+
+            double pvoeg = pvoe * 100;
+            pvoeg = pvoeg +0.5;
+            pvoeg = (int) pvoeg;
+            pvoeg = (double) pvoeg / 100;
+            tvPVOeG.setText("Ergebnis gerundet :"+ pvoeg + " cm²");
         }
     }
 

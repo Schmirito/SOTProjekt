@@ -50,12 +50,12 @@ public class DreieckFlaeche extends AppCompatActivity {
             double dfa = Double.parseDouble(dfastr);
             double dfh = Double.parseDouble(dfhstr);
             double dfe = 0.5 * dfa * dfh;
-            tvDFE.setText("Flächeninhalt: " + dfe + "cm²");
+            tvDFE.setText("Flächeninhalt: " + dfe + " cm²");
             double dfeg = dfe * 100;
             dfeg = dfeg +0.5;
             dfeg = (int) dfeg;
             dfeg = (double) dfeg / 100;
-            tvDFEG.setText("Ergebnis gerundet :"+ dfeg);
+            tvDFEG.setText("Ergebnis gerundet :"+ dfeg + " cm²");
         }
     }
 

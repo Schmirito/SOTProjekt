@@ -15,6 +15,7 @@ public class TrapezFlaeche extends AppCompatActivity {
     EditText etTFIh;
     Button btTFIB;
     TextView tvTFIE;
+    TextView tvTFIEG;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,7 @@ public class TrapezFlaeche extends AppCompatActivity {
         etTFIc = findViewById(R.id.etTFIc);
         etTFIh = findViewById(R.id.etTFIh);
         tvTFIE = findViewById(R.id.tvTFIE);
+        tvTFIEG = findViewById(R.id.tvTFIEG);
 
         btZurueckTFI.setOnClickListener(View -> clickedZTFI());
         btTFIB.setOnClickListener(View -> clickedTFIB());
@@ -48,7 +50,13 @@ public class TrapezFlaeche extends AppCompatActivity {
             double tfic = Double.parseDouble(tficstr);
             double tfih = Double.parseDouble(tfihstr);
             double tfie = (tfia + tfic) * 0.5 * tfih;
-            tvTFIE.setText("Flächeninhalt: " + tfie + "cm²");
+            tvTFIE.setText("Flächeninhalt: " + tfie + " cm²");
+
+            double tfieg = tfie * 100;
+            tfieg = tfieg +0.5;
+            tfieg = (int) tfieg;
+            tfieg = (double) tfieg / 100;
+            tvTFIEG.setText("Ergebnis gerundet :"+ tfieg + " cm²");
         }
     }
 

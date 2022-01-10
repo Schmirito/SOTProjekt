@@ -17,6 +17,7 @@ public class PrismenTrapezVolumen extends AppCompatActivity {
     EditText etPriTVh;
     EditText etPriTVhk;
     TextView tvPriTVe;
+    TextView tvPriTVeG;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +31,7 @@ public class PrismenTrapezVolumen extends AppCompatActivity {
         etPriTVh = findViewById(R.id.etPriTVh);
         etPriTVhk = findViewById(R.id.etPriTVhk);
         tvPriTVe = findViewById(R.id.tvPriTVe);
+        tvPriTVeG = findViewById(R.id.tvPriTVeG);
 
         btZurueckPriTV.setOnClickListener(View -> clickedZPriTV());
         btPriTVB.setOnClickListener(View -> clickedPriTVB());
@@ -51,7 +53,14 @@ public class PrismenTrapezVolumen extends AppCompatActivity {
             double pritvhk = Double.parseDouble(pritvhkstr);
             double pritve = 0.5 * (pritva + pritvc) * pritvh * pritvhk;
 
-            tvPriTVe.setText("Volumen: " + pritve + "cm³");
+            tvPriTVe.setText("Volumen: " + pritve + " cm³");
+
+            double pritveg = pritve * 100;
+            pritveg = pritveg +0.5;
+            pritveg = (int) pritveg;
+            pritveg = (double) pritveg / 100;
+            tvPriTVeG.setText("Ergebnis gerundet :"+ pritveg + " cm³");
+
         }
     }
 

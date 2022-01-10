@@ -14,6 +14,7 @@ public class PyramideViereckVolumen extends AppCompatActivity {
     EditText etPVVa;
     EditText etPVVh;
     TextView tvPVVe;
+    TextView tvPVVeG;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,7 @@ public class PyramideViereckVolumen extends AppCompatActivity {
         etPVVa = findViewById(R.id.etPVVa);
         etPVVh = findViewById(R.id.etPVVh);
         tvPVVe = findViewById(R.id.tvPVVe);
+        tvPVVeG = findViewById(R.id.tvPVVeG);
 
         btZurueckPVV.setOnClickListener(View -> clickedZPVV());
         btPVVB.setOnClickListener(View -> clickedPVVB());
@@ -42,7 +44,13 @@ public class PyramideViereckVolumen extends AppCompatActivity {
             double pvvh = Double.parseDouble(pvvhstr);
             double pvve = 0.33335 * (pvva * pvva) * pvvh;
 
-            tvPVVe.setText("Volumen: " + pvve + "cm³");
+            tvPVVe.setText("Volumen: " + pvve + " cm³");
+
+            double pvveg = pvve * 100;
+            pvveg = pvveg +0.5;
+            pvveg = (int) pvveg;
+            pvveg = (double) pvveg / 100;
+            tvPVVeG.setText("Ergebnis gerundet :"+ pvveg + " cm³");
         }
     }
 

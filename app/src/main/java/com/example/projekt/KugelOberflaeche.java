@@ -12,6 +12,7 @@ public class KugelOberflaeche extends AppCompatActivity {
     EditText etKOD;
     Button btKOB;
     TextView tvKOE;
+    TextView tvKOEG;
     double pi = Math.PI;
 
     @Override
@@ -23,6 +24,7 @@ public class KugelOberflaeche extends AppCompatActivity {
         btKOB = findViewById(R.id.btKOB);
         etKOD = findViewById(R.id.etKOD);
         tvKOE = findViewById(R.id.tvKOE);
+        tvKOEG = findViewById(R.id.tvKOEG);
 
         btZurueckKO.setOnClickListener(view -> clickedZKO());
         btKOB.setOnClickListener(view -> clickedKOB());
@@ -39,6 +41,12 @@ public class KugelOberflaeche extends AppCompatActivity {
             double kod = Double.parseDouble(kudstr);
             double koe = kod*kod*pi;
             tvKOE.setText("Oberflächeninhalt: " + koe + " cm²");
+
+            double koeg = koe * 100;
+            koeg = koeg +0.5;
+            koeg = (int) koeg;
+            koeg = (double) koeg / 100;
+            tvKOEG.setText("Ergebnis gerundet :"+ koeg + " cm²");
         }
     }
 

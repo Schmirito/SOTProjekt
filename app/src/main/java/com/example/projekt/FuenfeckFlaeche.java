@@ -14,6 +14,7 @@ public class FuenfeckFlaeche extends AppCompatActivity {
     EditText etFa;
     EditText etFh;
     TextView tvFe;
+    TextView tvFeG;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,7 @@ public class FuenfeckFlaeche extends AppCompatActivity {
         etFa = findViewById(R.id.etFFa);
         etFh = findViewById(R.id.etFFh);
         tvFe = findViewById(R.id.tvFFe);
+        tvFeG = findViewById(R.id.tvFFeG);
 
         btZurueckFF.setOnClickListener(View -> clickedZFF());
         btFB.setOnClickListener(View -> clickedFB());
@@ -40,9 +42,15 @@ public class FuenfeckFlaeche extends AppCompatActivity {
         else{
             double fa = Double.parseDouble(fastr);
             double fh = Double.parseDouble(fhstr);
-            double fe = 5 * (0.5 * fa * fh);
+            double ffe = 5 * (0.5 * fa * fh);
 
-            tvFe.setText("Flächeninhalt: " + fe + "cm²");
+            tvFe.setText("Flächeninhalt: " + ffe + " cm²");
+
+            double ffeg = ffe * 100;
+            ffeg = ffeg +0.5;
+            ffeg = (int) ffeg;
+            ffeg = (double) ffeg / 100;
+            tvFeG.setText("Ergebnis gerundet :"+ ffeg + " cm²");
         }
     }
 
