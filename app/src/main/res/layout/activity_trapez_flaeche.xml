@@ -20,7 +20,9 @@
     <TextView
             android:text="Formel: (a+c) /2 * h"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/textView3"/>
+            android:layout_height="wrap_content" android:id="@+id/textView3"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
     <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content" app:srcCompat="@drawable/trapez" android:id="@+id/imageView5"/>
@@ -59,9 +61,13 @@
             android:layout_height="wrap_content" android:id="@+id/btTFIB"/>
     <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/tvTFIE"/>
+            android:layout_height="wrap_content" android:id="@+id/tvTFIE"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
     <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/tvTFIEG"/>
+            android:layout_height="wrap_content" android:id="@+id/tvTFIEG"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
 </LinearLayout>
 </ScrollView>
