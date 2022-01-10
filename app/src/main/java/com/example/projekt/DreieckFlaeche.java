@@ -44,6 +44,7 @@ public class DreieckFlaeche extends AppCompatActivity {
 
         if (dfastr.length()==0||dfhstr.length()==0){
             tvDFE.setText("Bitte alle geforderten Werte eintragen!");
+            tvDFEG.setText(" ");
 
         }
         else {

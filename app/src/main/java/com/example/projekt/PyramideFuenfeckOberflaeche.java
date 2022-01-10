@@ -41,6 +41,7 @@ public class PyramideFuenfeckOberflaeche extends AppCompatActivity {
 
         if (pfoastr.length()==0||pfohastr.length()==0||pfohsstr.length()==0){
             tvPFOe.setText("Bitte alle geforderten Werte eingeben!");
+            tvPFOeG.setText(" ");
         }
         else{
             double pfoa = Double.parseDouble(pfoastr);

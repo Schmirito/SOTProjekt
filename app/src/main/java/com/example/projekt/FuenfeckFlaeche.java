@@ -38,6 +38,7 @@ public class FuenfeckFlaeche extends AppCompatActivity {
 
         if (fastr.length()==0||fhstr.length()==0){
             tvFe.setText("Bitte alle geforderten Werte eintragen!");
+            tvFeG.setText(" ");
         }
         else{
             double fa = Double.parseDouble(fastr);

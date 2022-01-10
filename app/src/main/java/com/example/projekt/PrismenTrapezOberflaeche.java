@@ -50,6 +50,7 @@ public class PrismenTrapezOberflaeche extends AppCompatActivity {
 
         if (priTOastr.length()==0||priTObstr.length()==0||priTOcstr.length()==0||priTOdstr.length()==0||priTOhstr.length()==0||priTOhkstr.length()==0){
             tvPriTOe.setText("Bitte alle geforderten Werte angeben!");
+            tvPriTOeG.setText(" ");
         }
         else{
             double pritoa = Double.parseDouble(priTOastr);

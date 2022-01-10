@@ -35,6 +35,7 @@ public class WuerfelOberflaeche extends AppCompatActivity {
 
         if (woastr.length()==0){
             tvWOe.setText("Bitte alle geforderten Werte eintragen!");
+            tvWOeG.setText(" ");
         }
         else{
             double woa = Double.parseDouble(woastr);

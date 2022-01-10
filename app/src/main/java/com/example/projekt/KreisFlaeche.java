@@ -33,6 +33,7 @@ public class KreisFlaeche extends AppCompatActivity {
         String kfdstr = etKFD.getText().toString();
         if (kfdstr.length()==0){
             tvKFE.setText("Bitte alle geforderten Werte eintragen!");
+            tvKFEG.setText(" ");
 
         }
         else {

@@ -38,6 +38,7 @@ public class RechteckUmfang extends AppCompatActivity {
 
         if (ruastr.length()==0||rubstr.length()==0){
             tvRUe.setText("Bitte alle geforderten Werte eintragen!");
+            tvRUeG.setText(" ");
         }
         else {
             double rua = Double.parseDouble(ruastr);

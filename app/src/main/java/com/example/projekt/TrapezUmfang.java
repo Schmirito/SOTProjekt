@@ -45,6 +45,7 @@ public class TrapezUmfang extends AppCompatActivity {
 
         if (tuastr.length()==0||tubstr.length()==0||tucstr.length()==0||tudstr.length()==0){
             tvTUe.setText("Bitte alle geforderten Werte eintragen!");
+            tvTUeG.setText(" ");
         }
         else{
             double tua = Double.parseDouble(tuastr);

@@ -49,6 +49,7 @@ public class PrismenDreieckOberflaeche extends AppCompatActivity {
 
         if (pridoastr.length()==0||pridobstr.length()==0||pridocstr.length()==0||pridohstr.length()==0||pridohastr.length()==0){
             tvPriDOe.setText("Bitte alle geforderten Werte angeben!");
+            tvPriDOeG.setText(" ");
         }
         else{
             double pridoa = Double.parseDouble(pridoastr);

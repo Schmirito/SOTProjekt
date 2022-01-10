@@ -41,6 +41,7 @@ public class PrismenDreieckVolumen extends AppCompatActivity {
 
         if (pridvastr.length()==0||pridvhastr.length()==0||pridvhstr.length()==0){
             tvPriDVe.setText("Bitte alle erforderten Werte eingeben!");
+            tvPriDVeG.setText(" ");
         }
         else{
             double pridva = Double.parseDouble(pridvastr);

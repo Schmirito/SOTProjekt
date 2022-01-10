@@ -45,6 +45,7 @@ public class PrismenTrapezVolumen extends AppCompatActivity {
 
         if (pritvastr.length()==0||pritvcstr.length()==0||pritvhstr.length()==0||pritvhkstr.length()==0){
             tvPriTVe.setText("Bitte alle geforderten Werte eintragen!");
+            tvPriTVeG.setText(" ");
         }
         else{
             double pritva = Double.parseDouble(pritvastr);

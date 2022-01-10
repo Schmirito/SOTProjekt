@@ -38,6 +38,7 @@ public class ParallelogrammUmfang extends AppCompatActivity {
 
         if (parauastr.length()==0||paraubstr.length()==0){
             tvParaUe.setText("Bitte alle geforderten Werte angeben!");
+            tvParaUeG.setText(" ");
         }
         else{
             double paraua = Double.parseDouble(parauastr);

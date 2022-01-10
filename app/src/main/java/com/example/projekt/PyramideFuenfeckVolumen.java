@@ -41,6 +41,7 @@ public class PyramideFuenfeckVolumen extends AppCompatActivity {
 
         if (pfvastr.length()==0||pfvhastr.length()==0||pfvhstr.length()==0){
             tvPFVe.setText("Bitte alle geforderten Werte eintragen!");
+            tvPFVeG.setText(" ");
         }
         else{
             double pfva = Double.parseDouble(pfvastr);

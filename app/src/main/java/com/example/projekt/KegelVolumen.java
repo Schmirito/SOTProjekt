@@ -40,6 +40,7 @@ public class KegelVolumen extends AppCompatActivity {
 
         if (kegelvrstr.length()==0||kegelvhstr.length()==0){
             tvKegelVe.setText("Bitte alle geforderten Werte eintragen!");
+            tvKegelVeG.setText(" ");
         }
         else{
             double kegelvr = Double.parseDouble(kegelvrstr);

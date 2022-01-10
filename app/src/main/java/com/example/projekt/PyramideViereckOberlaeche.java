@@ -38,6 +38,7 @@ public class PyramideViereckOberlaeche extends AppCompatActivity {
 
         if (pvoastr.length()==0||pvohastr.length()==0){
             tvPVOe.setText("Bitte alle geforderten werte angeben!");
+            tvPVOeG.setText(" ");
         }
         else{
             double pvoa = Double.parseDouble(pvoastr);

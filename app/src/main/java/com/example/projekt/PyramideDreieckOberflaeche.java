@@ -43,6 +43,7 @@ public class PyramideDreieckOberflaeche extends AppCompatActivity {
 
         if (pdoastr.length()==0||pdohastr.length()==0||pdodstr.length()==0){
             tvPDOe.setText("Bitte alle geforderten Werte eintragen");
+            tvPDOeG.setText(" ");
         }
         else{
             double pdoa = Double.parseDouble(pdoastr);

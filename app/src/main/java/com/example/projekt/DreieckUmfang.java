@@ -48,6 +48,7 @@ public class DreieckUmfang extends AppCompatActivity {
 
         if (duastr.length()==0||dubstr.length()==0||ducstr.length()==0){
             tvDUE.setText("Bitte alle geforderten Werte eintragen!");
+            tvDUEG.setText(" ");
 
         }
         else {

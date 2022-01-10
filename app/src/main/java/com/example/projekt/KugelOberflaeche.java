@@ -35,6 +35,7 @@ public class KugelOberflaeche extends AppCompatActivity {
 
         if (kudstr.length()==0){
             tvKOE.setText("Bitte alle geforderten Werte eintragen!");
+            tvKOEG.setText(" ");
 
         }
         else {

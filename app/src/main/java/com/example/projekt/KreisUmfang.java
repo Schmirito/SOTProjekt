@@ -34,6 +34,7 @@ public class KreisUmfang extends AppCompatActivity {
 
         if (kudstr.length()==0){
             tvKUE.setText("Bitte alle geforderten Werte eintragen!");
+            tvKUEG.setText(" ");
 
         }
         else {

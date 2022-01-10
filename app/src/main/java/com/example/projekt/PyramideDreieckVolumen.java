@@ -41,6 +41,7 @@ public class PyramideDreieckVolumen extends AppCompatActivity {
 
         if (pdvastr.length()==0||pdvhstr.length()==0||pdvdstr.length()==0){
             tvPDVe.setText("Bitte alle geforderten Werte eintragen");
+            tvPDVeG.setText(" ");
         }
         else{
             double pdva = Double.parseDouble(pdvastr);

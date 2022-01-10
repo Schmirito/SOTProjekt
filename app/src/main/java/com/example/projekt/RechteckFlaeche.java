@@ -38,6 +38,7 @@ public class RechteckFlaeche extends AppCompatActivity {
 
         if (rfastr.length()==0||rfbstr.length()==0){
             tvRFe.setText("Bitte alle geforderten Werte eingeben!");
+            tvRFeG.setText(" ");
         }
         else{
             double rfa = Double.parseDouble(rfastr);

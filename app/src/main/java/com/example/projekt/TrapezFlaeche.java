@@ -43,6 +43,7 @@ public class TrapezFlaeche extends AppCompatActivity {
 
         if (tfiastr.length()==0||tficstr.length()==0||tfihstr.length()==0){
             tvTFIE.setText("Bitte alle geforderten Werte eintragen!");
+            tvTFIEG.setText(" ");
 
         }
         else{

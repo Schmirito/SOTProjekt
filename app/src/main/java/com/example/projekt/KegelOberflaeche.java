@@ -42,6 +42,7 @@ public class KegelOberflaeche extends AppCompatActivity {
 
         if (kegelorstr.length()==0||kegelosstr.length()==0){
             tvKegelOe.setText("Bitte alle geforderten Werte eintragen!");
+            tvKegelOeG.setText(" ");
         }
         else{
             double kegelor = Double.parseDouble(kegelorstr);

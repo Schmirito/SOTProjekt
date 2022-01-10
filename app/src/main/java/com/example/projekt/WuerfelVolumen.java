@@ -35,6 +35,7 @@ public class WuerfelVolumen extends AppCompatActivity {
 
         if (wvastr.length()==0){
             tvWVe.setText("Bitte alle geforderten Werte angeben!");
+            tvWVeG.setText(" ");
         }
         else{
             double wva = Double.parseDouble(wvastr);

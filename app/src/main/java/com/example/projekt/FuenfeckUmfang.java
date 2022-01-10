@@ -47,6 +47,7 @@ public class FuenfeckUmfang extends AppCompatActivity {
 
         if (fuastr.length()==0||fubstr.length()==0||fucstr.length()==0||fudstr.length()==0||fuestr.length()==0){
             tvFUErgebnis.setText("Bitte alle geforderten Werte eingeben!");
+            tvFUErgebnisG.setText(" ");
         }
         else{
             double fua = Double.parseDouble(fuastr);

@@ -39,6 +39,7 @@ public class ParallelogrammFlaeche extends AppCompatActivity {
 
         if (parafastr.length()==0||parafhastr.length()==0){
             tvParaFe.setText("Bitte alle geforderten Werte eintragen!");
+            tvParaFeG.setText(" ");
         }
         else{
             double parafa = Double.parseDouble(parafastr);

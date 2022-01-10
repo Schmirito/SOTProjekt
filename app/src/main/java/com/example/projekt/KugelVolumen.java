@@ -40,6 +40,7 @@ public class KugelVolumen extends AppCompatActivity {
 
         if (kvdstr.length() == 0) {
             tvKVE.setText("Bitte alle geforderten Werte eintragen!");
+            tvKVEG.setText(" ");
 
         }
         else {
