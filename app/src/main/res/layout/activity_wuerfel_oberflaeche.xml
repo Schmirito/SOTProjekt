@@ -19,7 +19,9 @@
     <TextView
             android:text="Formel: 6 * a²"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/textView39"/>
+            android:layout_height="wrap_content" android:id="@+id/textView39"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
     <ImageView
             android:layout_width="match_parent"
             android:layout_height="241dp" app:srcCompat="@drawable/w_rfel" android:id="@+id/imageView15"/>
@@ -39,9 +41,13 @@
             android:layout_height="wrap_content" android:id="@+id/btWOB"/>
     <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/tvWOe"/>
+            android:layout_height="wrap_content" android:id="@+id/tvWOe"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
     <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/tvWOeG"/>
+            android:layout_height="wrap_content" android:id="@+id/tvWOeG"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
 </LinearLayout>
 </ScrollView>
