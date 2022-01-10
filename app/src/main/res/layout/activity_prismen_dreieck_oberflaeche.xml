@@ -20,7 +20,9 @@
     <TextView
             android:text="Formel: 2 * (1/2 * a * ha) + (a + b + c) * h"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/textView45"/>
+            android:layout_height="wrap_content" android:id="@+id/textView45"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
     <ImageView
             android:layout_width="match_parent"
             android:layout_height="141dp" app:srcCompat="@drawable/dreiecksprisma1"
@@ -81,9 +83,13 @@
             android:layout_height="wrap_content" android:id="@+id/btPriDOB"/>
     <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/tvPriDOe"/>
+            android:layout_height="wrap_content" android:id="@+id/tvPriDOe"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
     <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/tvPriDOeG"/>
+            android:layout_height="wrap_content" android:id="@+id/tvPriDOeG"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
 </LinearLayout>
 </ScrollView>
