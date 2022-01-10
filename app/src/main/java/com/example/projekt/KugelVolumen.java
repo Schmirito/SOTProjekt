@@ -42,7 +42,7 @@ public class KugelVolumen extends AppCompatActivity {
         }
         else {
             double kvd = Double.parseDouble(kvdstr);
-            double kve =pi*kvd*kvd*0.33333333333333333333333333333333333333333;
+            double kve =pi * (kvd * kvd) * 0.33333333333333333333333333333333333333333;
             tvKVE.setText("Volumen: " + kve + " cm³");
         }
     }

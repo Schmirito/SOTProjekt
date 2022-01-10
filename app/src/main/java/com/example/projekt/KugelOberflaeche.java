@@ -38,7 +38,7 @@ public class KugelOberflaeche extends AppCompatActivity {
         else {
             double kod = Double.parseDouble(kudstr);
             double koe = kod*kod*pi;
-            tvKOE.setText("Oberflächeninhalt: " + koe + " cm");
+            tvKOE.setText("Oberflächeninhalt: " + koe + " cm²");
         }
     }
 
