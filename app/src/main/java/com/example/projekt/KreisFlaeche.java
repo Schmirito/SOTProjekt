@@ -23,7 +23,7 @@ public class KreisFlaeche extends AppCompatActivity {
         btKFB = findViewById(R.id.btKFB);
         etKFD = findViewById(R.id.etKFD);
         tvKFE = findViewById(R.id.tvKFE);
-        tvKFE = findViewById(R.id.tvKFEG);
+        tvKFEG = findViewById(R.id.tvKFEG);
 
         btZurueckKF.setOnClickListener(view -> clickedZKF());
         btKFB.setOnClickListener(view -> clickedKFB());

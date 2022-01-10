@@ -28,7 +28,7 @@ public class PyramideFuenfeckVolumen extends AppCompatActivity {
         etPFVha = findViewById(R.id.etPFVha);
         etPFVh = findViewById(R.id.etPFVh);
         tvPFVe = findViewById(R.id.tvPFVe);
-        tvPFVe = findViewById(R.id.tvPFVeG);
+        tvPFVeG = findViewById(R.id.tvPFVeG);
 
         btZurueckPFV.setOnClickListener(Viw -> clickedZPFV());
         btPFVB.setOnClickListener(View -> clickedPFVB());

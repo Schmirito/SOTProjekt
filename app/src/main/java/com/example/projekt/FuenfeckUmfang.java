@@ -58,7 +58,7 @@ public class FuenfeckUmfang extends AppCompatActivity {
 
             tvFUErgebnis.setText("Umfang: " + fuErgebnis + " cm");
 
-            double fueg = fue * 100;
+            double fueg = fuErgebnis * 100;
             fueg = fueg +0.5;
             fueg = (int) fueg;
             fueg = (double) fueg / 100;

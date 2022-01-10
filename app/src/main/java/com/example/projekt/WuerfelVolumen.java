@@ -24,6 +24,7 @@ public class WuerfelVolumen extends AppCompatActivity {
         btWVB = findViewById(R.id.btWVB);
         etWVa = findViewById(R.id.etWVa);
         tvWVeG = findViewById(R.id.tvWVeG);
+        tvWVe = findViewById(R.id.tvWVe);
 
         btZurueckWV.setOnClickListener(View -> clickedZWV());
         btWVB.setOnClickListener(View -> clickedWVB());
