@@ -45,7 +45,7 @@ public class RechteckUmfang extends AppCompatActivity {
             double rue = 2 * (rua + rub);
             tvRUe.setText("Umfang: " + rue + " cm");
 
-            double rueg = ruoe * 100;
+            double rueg = rue * 100;
             rueg = rueg +0.5;
             rueg = (int) rueg;
             rueg = (double) rueg / 100;

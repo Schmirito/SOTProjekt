@@ -30,7 +30,7 @@ public class TrapezUmfang extends AppCompatActivity {
         etTUc = findViewById(R.id.etTUc);
         etTUd = findViewById(R.id.etTUd);
         tvTUe = findViewById(R.id.tvTUe);
-        tvTUeG = findViewById(R.id.tvTUe)G;
+        tvTUeG = findViewById(R.id.tvTUeG);
 
         btZurueckTU.setOnClickListener(View -> clickedZTU());
         btTUB.setOnClickListener(View -> clickedTUB());
