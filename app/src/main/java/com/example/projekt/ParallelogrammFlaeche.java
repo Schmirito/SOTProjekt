@@ -51,7 +51,7 @@ public class ParallelogrammFlaeche extends AppCompatActivity {
             parafeg = parafeg +0.5;
             parafeg = (int) parafeg;
             parafeg = (double) parafeg / 100;
-            tvParaFeG.setText("Ergebnis gerundet :"+ parafeg + " cm²");
+            tvParaFeG.setText("Ergebnis gerundet: "+ parafeg + " cm²");
 
 
         }

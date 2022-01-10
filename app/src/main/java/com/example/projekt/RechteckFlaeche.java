@@ -50,7 +50,7 @@ public class RechteckFlaeche extends AppCompatActivity {
             rfeg = rfeg +0.5;
             rfeg = (int) rfeg;
             rfeg = (double) rfeg / 100;
-            tvRFeG.setText("Ergebnis gerundet :"+ rfeg + " cm²");
+            tvRFeG.setText("Ergebnis gerundet: "+ rfeg + " cm²");
         }
     }
 

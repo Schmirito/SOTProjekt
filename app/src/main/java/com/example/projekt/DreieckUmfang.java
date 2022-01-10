@@ -60,7 +60,7 @@ public class DreieckUmfang extends AppCompatActivity {
             dueg = dueg +0.5;
             dueg = (int) dueg;
             dueg = (double) dueg / 100;
-            tvDUEG.setText("Ergebnis gerundet :"+ dueg + " cm");
+            tvDUEG.setText("Ergebnis gerundet: "+ dueg + " cm");
         }
 
 

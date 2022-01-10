@@ -55,7 +55,7 @@ public class PyramideDreieckOberflaeche extends AppCompatActivity {
             pdoeg = pdoeg +0.5;
             pdoeg = (int) pdoeg;
             pdoeg = (double) pdoeg / 100;
-            tvPDOeG.setText("Ergebnis gerundet :"+ pdoeg + " cm²");
+            tvPDOeG.setText("Ergebnis gerundet: "+ pdoeg + " cm²");
         }
     }
 

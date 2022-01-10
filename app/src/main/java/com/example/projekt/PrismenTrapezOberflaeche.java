@@ -65,7 +65,7 @@ public class PrismenTrapezOberflaeche extends AppCompatActivity {
             pritoeg = pritoeg +0.5;
             pritoeg = (int) pritoeg;
             pritoeg = (double) pritoeg / 100;
-            tvPriTOeG.setText("Ergebnis gerundet :"+ pritoeg + " cm²");
+            tvPriTOeG.setText("Ergebnis gerundet: "+ pritoeg + " cm²");
         }
     }
 

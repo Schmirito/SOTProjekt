@@ -44,7 +44,7 @@ public class WuerfelVolumen extends AppCompatActivity {
             wveg = wveg +0.5;
             wveg = (int) wveg;
             wveg = (double) wveg / 100;
-            tvWVeG.setText("Ergebnis gerundet :"+ wveg + " cm³");
+            tvWVeG.setText("Ergebnis gerundet: "+ wveg + " cm³");
         }
     }
 

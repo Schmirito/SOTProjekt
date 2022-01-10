@@ -50,7 +50,7 @@ public class ParallelogrammUmfang extends AppCompatActivity {
             paraueg = paraueg +0.5;
             paraueg = (int) paraueg;
             paraueg = (double) paraueg / 100;
-            tvParaUeG.setText("Ergebnis gerundet :"+ paraueg + " cm");
+            tvParaUeG.setText("Ergebnis gerundet: "+ paraueg + " cm");
         }
     }
 

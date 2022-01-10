@@ -54,7 +54,7 @@ public class PyramideDreieckVolumen extends AppCompatActivity {
             pdveg = pdveg +0.5;
             pdveg = (int) pdveg;
             pdveg = (double) pdveg / 100;
-            tvPDVeG.setText("Ergebnis gerundet :"+ pdveg + " cm³");
+            tvPDVeG.setText("Ergebnis gerundet: "+ pdveg + " cm³");
         }
 
     }

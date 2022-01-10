@@ -49,7 +49,7 @@ public class RechteckUmfang extends AppCompatActivity {
             rueg = rueg +0.5;
             rueg = (int) rueg;
             rueg = (double) rueg / 100;
-            tvRUeG.setText("Ergebnis gerundet :"+ rueg + " cm");
+            tvRUeG.setText("Ergebnis gerundet: "+ rueg + " cm");
         }
     }
 

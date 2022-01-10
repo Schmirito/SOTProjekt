@@ -56,7 +56,7 @@ public class TrapezFlaeche extends AppCompatActivity {
             tfieg = tfieg +0.5;
             tfieg = (int) tfieg;
             tfieg = (double) tfieg / 100;
-            tvTFIEG.setText("Ergebnis gerundet :"+ tfieg + " cm²");
+            tvTFIEG.setText("Ergebnis gerundet: "+ tfieg + " cm²");
         }
     }
 

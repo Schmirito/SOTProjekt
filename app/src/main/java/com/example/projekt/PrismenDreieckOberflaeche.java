@@ -65,7 +65,7 @@ public class PrismenDreieckOberflaeche extends AppCompatActivity {
             pridoeg = pridoeg +0.5;
             pridoeg = (int) pridoeg;
             pridoeg = (double) pridoeg / 100;
-            tvPriDOeG.setText("Ergebnis gerundet :"+ pridoeg + " cm²");
+            tvPriDOeG.setText("Ergebnis gerundet: "+ pridoeg + " cm²");
         }
     }
 

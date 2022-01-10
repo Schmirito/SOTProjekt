@@ -51,7 +51,7 @@ public class KugelVolumen extends AppCompatActivity {
             kveg = kveg +0.5;
             kveg = (int) kveg;
             kveg = (double) kveg / 100;
-            tvKVEG.setText("Ergebnis gerundet :"+ kveg + " cm³");
+            tvKVEG.setText("Ergebnis gerundet: "+ kveg + " cm³");
         }
     }
 

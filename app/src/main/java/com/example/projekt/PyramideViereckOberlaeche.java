@@ -50,7 +50,7 @@ public class PyramideViereckOberlaeche extends AppCompatActivity {
             pvoeg = pvoeg +0.5;
             pvoeg = (int) pvoeg;
             pvoeg = (double) pvoeg / 100;
-            tvPVOeG.setText("Ergebnis gerundet :"+ pvoeg + " cm²");
+            tvPVOeG.setText("Ergebnis gerundet: "+ pvoeg + " cm²");
         }
     }
 

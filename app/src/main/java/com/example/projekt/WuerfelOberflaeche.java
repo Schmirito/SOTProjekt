@@ -46,7 +46,7 @@ public class WuerfelOberflaeche extends AppCompatActivity {
             woeg = woeg +0.5;
             woeg = (int) woeg;
             woeg = (double) woeg / 100;
-            tvWOeG.setText("Ergebnis gerundet :"+ woeg + " cm²");
+            tvWOeG.setText("Ergebnis gerundet: "+ woeg + " cm²");
         }
     }
 

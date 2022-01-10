@@ -44,7 +44,7 @@ public class KreisFlaeche extends AppCompatActivity {
             kfeg = kfeg +0.5;
             kfeg = (int) kfeg;
             kfeg = (double) kfeg / 100;
-            tvKFEG.setText("Ergebnis gerundet :"+ kfeg + " cm²");
+            tvKFEG.setText("Ergebnis gerundet: "+ kfeg + " cm²");
         }
     }
 

@@ -50,7 +50,7 @@ public class FuenfeckFlaeche extends AppCompatActivity {
             ffeg = ffeg +0.5;
             ffeg = (int) ffeg;
             ffeg = (double) ffeg / 100;
-            tvFeG.setText("Ergebnis gerundet :"+ ffeg + " cm²");
+            tvFeG.setText("Ergebnis gerundet: "+ ffeg + " cm²");
         }
     }
 

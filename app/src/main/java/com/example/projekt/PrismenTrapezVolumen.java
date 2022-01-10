@@ -59,7 +59,7 @@ public class PrismenTrapezVolumen extends AppCompatActivity {
             pritveg = pritveg +0.5;
             pritveg = (int) pritveg;
             pritveg = (double) pritveg / 100;
-            tvPriTVeG.setText("Ergebnis gerundet :"+ pritveg + " cm³");
+            tvPriTVeG.setText("Ergebnis gerundet: "+ pritveg + " cm³");
 
         }
     }

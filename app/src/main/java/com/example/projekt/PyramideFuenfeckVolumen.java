@@ -54,7 +54,7 @@ public class PyramideFuenfeckVolumen extends AppCompatActivity {
             pfveg = pfveg +0.5;
             pfveg = (int) pfveg;
             pfveg = (double) pfveg / 100;
-            tvPFVeG.setText("Ergebnis gerundet :"+ pfveg + " cm³");
+            tvPFVeG.setText("Ergebnis gerundet: "+ pfveg + " cm³");
         }
     }
 

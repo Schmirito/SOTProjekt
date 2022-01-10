@@ -62,7 +62,7 @@ public class FuenfeckUmfang extends AppCompatActivity {
             fueg = fueg +0.5;
             fueg = (int) fueg;
             fueg = (double) fueg / 100;
-            tvFUErgebnisG.setText("Ergebnis gerundet :"+ fueg + " cm");
+            tvFUErgebnisG.setText("Ergebnis gerundet: "+ fueg + " cm");
         }
     }
 

@@ -54,7 +54,7 @@ public class PrismenDreieckVolumen extends AppCompatActivity {
             pridveg = pridveg +0.5;
             pridveg = (int) pridveg;
             pridveg = (double) pridveg / 100;
-            tvPriDVeG.setText("Ergebnis gerundet :"+ pridveg + " cm³");
+            tvPriDVeG.setText("Ergebnis gerundet: "+ pridveg + " cm³");
         }
     }
 

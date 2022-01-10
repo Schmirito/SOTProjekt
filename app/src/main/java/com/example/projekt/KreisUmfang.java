@@ -45,7 +45,7 @@ public class KreisUmfang extends AppCompatActivity {
             kueg = kueg +0.5;
             kueg = (int) kueg;
             kueg = (double) kueg / 100;
-            tvKUEG.setText("Ergebnis gerundet :"+ kueg + " cm");
+            tvKUEG.setText("Ergebnis gerundet: "+ kueg + " cm");
         }
     }
 

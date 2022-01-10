@@ -54,7 +54,7 @@ public class PyramideFuenfeckOberflaeche extends AppCompatActivity {
             pfoeg = pfoeg +0.5;
             pfoeg = (int) pfoeg;
             pfoeg = (double) pfoeg / 100;
-            tvPFOeG.setText("Ergebnis gerundet :"+ pfoeg + " cm²");
+            tvPFOeG.setText("Ergebnis gerundet: "+ pfoeg + " cm²");
 
 
         }

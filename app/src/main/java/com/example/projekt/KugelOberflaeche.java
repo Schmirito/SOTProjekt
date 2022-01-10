@@ -46,7 +46,7 @@ public class KugelOberflaeche extends AppCompatActivity {
             koeg = koeg +0.5;
             koeg = (int) koeg;
             koeg = (double) koeg / 100;
-            tvKOEG.setText("Ergebnis gerundet :"+ koeg + " cm²");
+            tvKOEG.setText("Ergebnis gerundet: "+ koeg + " cm²");
         }
     }
 

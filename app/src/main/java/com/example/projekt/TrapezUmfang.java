@@ -58,7 +58,7 @@ public class TrapezUmfang extends AppCompatActivity {
             tueg = tueg +0.5;
             tueg = (int) tueg;
             tueg = (double) tueg / 100;
-            tvTUeG.setText("Ergebnis gerundet :"+ tueg + " cm");
+            tvTUeG.setText("Ergebnis gerundet: "+ tueg + " cm");
         }
 
     }

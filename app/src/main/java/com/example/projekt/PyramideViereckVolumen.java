@@ -50,7 +50,7 @@ public class PyramideViereckVolumen extends AppCompatActivity {
             pvveg = pvveg +0.5;
             pvveg = (int) pvveg;
             pvveg = (double) pvveg / 100;
-            tvPVVeG.setText("Ergebnis gerundet :"+ pvveg + " cm³");
+            tvPVVeG.setText("Ergebnis gerundet: "+ pvveg + " cm³");
         }
     }
 

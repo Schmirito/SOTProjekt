@@ -55,7 +55,7 @@ public class DreieckFlaeche extends AppCompatActivity {
             dfeg = dfeg +0.5;
             dfeg = (int) dfeg;
             dfeg = (double) dfeg / 100;
-            tvDFEG.setText("Ergebnis gerundet :"+ dfeg + " cm²");
+            tvDFEG.setText("Ergebnis gerundet: "+ dfeg + " cm²");
         }
     }
 
