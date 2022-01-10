@@ -20,7 +20,9 @@
     <TextView
             android:text="Formel: a + b + c + d + e"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/textView74"/>
+            android:layout_height="wrap_content" android:id="@+id/textView74"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
     <ImageView
             android:layout_width="match_parent"
             android:layout_height="146dp" app:srcCompat="@drawable/fuenfeck" android:id="@+id/imageView21"/>
@@ -80,9 +82,13 @@
             android:layout_height="wrap_content" android:id="@+id/btFUB"/>
     <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/tvFUErgebniss"/>
+            android:layout_height="wrap_content" android:id="@+id/tvFUErgebniss"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
     <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/tvFUErgebnissG"/>
+            android:layout_height="wrap_content" android:id="@+id/tvFUErgebnissG"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
 </LinearLayout>
 </ScrollView>

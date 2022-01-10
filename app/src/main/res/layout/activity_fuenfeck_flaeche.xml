@@ -20,7 +20,9 @@
     <TextView
             android:text="Formel: 5* (1/2 * a * h)"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/textView71"/>
+            android:layout_height="wrap_content" android:id="@+id/textView71"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
     <ImageView
             android:layout_width="match_parent"
             android:layout_height="230dp" app:srcCompat="@drawable/fuenfeck" android:id="@+id/imageView22"/>
@@ -49,9 +51,13 @@
             android:layout_height="wrap_content" android:id="@+id/btFB"/>
     <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/tvFFe"/>
+            android:layout_height="wrap_content" android:id="@+id/tvFFe"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
     <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/tvFFeG"/>
+            android:layout_height="wrap_content" android:id="@+id/tvFFeG"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
 </LinearLayout>
 </ScrollView>
