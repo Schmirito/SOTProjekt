@@ -11,6 +11,10 @@
         tools:context=".Umrechner"
             android:orientation="vertical"
             android:padding="16dp">
+        <Button
+                android:text="zurück"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/btZurueckUmrechner"/>
         <TextView
                 android:text="Millimeter"
                 android:layout_width="match_parent"
@@ -20,11 +24,16 @@
                 android:layout_height="wrap_content"
                 android:inputType="number|numberDecimal"
                 android:ems="10"
-                android:id="@+id/etMiliE"/>
+                android:id="@+id/etMili"/>
         <TextView
                 android:text=" "
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/tvMili"/>
+                android:layout_height="wrap_content" android:id="@+id/tvMiliE"
+                android:textColor="@color/black"/>
+        <TextView
+                android:text=" "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView94"/>
         <TextView
                 android:text="Zentimeter"
                 android:layout_width="match_parent"
@@ -34,11 +43,16 @@
                 android:layout_height="wrap_content"
                 android:inputType="number|numberDecimal"
                 android:ems="10"
-                android:id="@+id/etZentiE"/>
+                android:id="@+id/etZenti"/>
         <TextView
                 android:text=" "
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/tvZenti"/>
+                android:layout_height="wrap_content" android:id="@+id/tvZentiE"
+                android:textColor="@color/black"/>
+        <TextView
+                android:text=" "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView95"/>
         <TextView
                 android:text="Dezimeter"
                 android:layout_width="match_parent"
@@ -48,11 +62,16 @@
                 android:layout_height="wrap_content"
                 android:inputType="number|numberDecimal"
                 android:ems="10"
-                android:id="@+id/etDeziE"/>
+                android:id="@+id/etDezi"/>
         <TextView
                 android:text=" "
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/tvDezi"/>
+                android:layout_height="wrap_content" android:id="@+id/tvDeziE"
+                android:textColor="@color/black"/>
+        <TextView
+                android:text=" "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView96"/>
         <TextView
                 android:text="Meter"
                 android:layout_width="match_parent"
@@ -62,11 +81,16 @@
                 android:layout_height="wrap_content"
                 android:inputType="number|numberDecimal"
                 android:ems="10"
-                android:id="@+id/etMeterE"/>
+                android:id="@+id/etMeter"/>
         <TextView
                 android:text=" "
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/tvMeter"/>
+                android:layout_height="wrap_content" android:id="@+id/tvMeterE"
+                android:textColor="@color/black"/>
+        <TextView
+                android:text=" "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView97"/>
         <TextView
                 android:text="Kilometer"
                 android:layout_width="match_parent"
@@ -76,11 +100,21 @@
                 android:layout_height="wrap_content"
                 android:inputType="number|numberDecimal"
                 android:ems="10"
-                android:id="@+id/etKiloE"/>
+                android:id="@+id/etKilo"/>
         <TextView
                 android:text=" "
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/tvKilo"/>
+                android:layout_height="wrap_content" android:id="@+id/tvKiloE"
+                android:textColor="@color/black"/>
+
+        <TextView
+                android:text=" "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView98"/>
+        <Button
+                android:text="Berechne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/btUmrechnen"/>
     </LinearLayout>
 
 </ScrollView>
