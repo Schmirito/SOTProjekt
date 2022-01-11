@@ -9,6 +9,8 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/Theme.Projekt">
+        <activity android:name=".Umrechner">
+        </activity>
         <activity android:name=".AuswahlDimension">
         </activity>
         <activity android:name=".KegelOberflaeche">

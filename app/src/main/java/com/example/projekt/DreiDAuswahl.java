@@ -56,7 +56,7 @@ public class DreiDAuswahl extends AppCompatActivity {
     }
 
     private void clickedZurueck3DA() {
-        Intent iZ3DA = new Intent(this,ErsteActivity.class);
+        Intent iZ3DA = new Intent(this,AuswahlDimension.class);
         startActivity(iZ3DA);
     }
 
