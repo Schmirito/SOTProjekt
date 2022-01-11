@@ -69,6 +69,8 @@ public class Umrechner extends AppCompatActivity {
             double meteru = mili/1000;
             double kilou = mili/1000000;
 
+            etMili.getText().clear();
+
             tvMiliE.setText(mili + " mm");
             tvZentiE.setText(zentiu + " cm");
             tvDeziE.setText(deziu + " dm");
@@ -91,6 +93,8 @@ public class Umrechner extends AppCompatActivity {
                     double meteru = zenti / 100;
                     double kilou = zenti / 100000;
 
+                    etZenti.getText().clear();
+
                     tvMiliE.setText(miliu + " mm");
                     tvZentiE.setText(zenti + " cm");
                     tvDeziE.setText(deziu + " dm");
@@ -112,6 +116,8 @@ public class Umrechner extends AppCompatActivity {
                     double meteru = dezi/10;
                     double kilou = dezi/10000;
 
+                    etDezi.getText().clear();
+
                     tvMiliE.setText(miliu + " mm");
                     tvZentiE.setText(zentiu + " cm");
                     tvDeziE.setText(dezi + " dm");
@@ -132,6 +138,8 @@ public class Umrechner extends AppCompatActivity {
                         double deziu = meter*10;
                         double kilou = meter/1000;
 
+                        etMeter.getText().clear();
+
                         tvMiliE.setText(miliu + " mm");
                         tvZentiE.setText(zentiu + " cm");
                         tvDeziE.setText(deziu + " dm");
@@ -150,6 +158,8 @@ public class Umrechner extends AppCompatActivity {
                             double zentiu = kilo*100000;
                             double deziu = kilo*10000;
                             double meteru = kilo*1000;
+
+                            etMeter.getText().clear();
 
                             tvMiliE.setText(miliu + " mm");
                             tvZentiE.setText(zentiu + " cm");

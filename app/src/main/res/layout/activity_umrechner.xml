@@ -19,6 +19,11 @@
                 android:text="Millimeter"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/textView89"/>
+        <TextView
+                android:text=" "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/tvMiliE"
+                android:textColor="@color/black"/>
         <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -26,18 +31,14 @@
                 android:ems="10"
                 android:id="@+id/etMili"/>
         <TextView
-                android:text=" "
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/tvMiliE"
-                android:textColor="@color/black"/>
-        <TextView
-                android:text=" "
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/textView94"/>
-        <TextView
                 android:text="Zentimeter"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/textView90"/>
+        <TextView
+                android:text=" "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/tvZentiE"
+                android:textColor="@color/black"/>
         <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -45,18 +46,14 @@
                 android:ems="10"
                 android:id="@+id/etZenti"/>
         <TextView
-                android:text=" "
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/tvZentiE"
-                android:textColor="@color/black"/>
-        <TextView
-                android:text=" "
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/textView95"/>
-        <TextView
                 android:text="Dezimeter"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/textView91"/>
+        <TextView
+                android:text=" "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/tvDeziE"
+                android:textColor="@color/black"/>
         <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -64,18 +61,14 @@
                 android:ems="10"
                 android:id="@+id/etDezi"/>
         <TextView
-                android:text=" "
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/tvDeziE"
-                android:textColor="@color/black"/>
-        <TextView
-                android:text=" "
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/textView96"/>
-        <TextView
                 android:text="Meter"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/textView92"/>
+        <TextView
+                android:text=" "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/tvMeterE"
+                android:textColor="@color/black"/>
         <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -83,34 +76,21 @@
                 android:ems="10"
                 android:id="@+id/etMeter"/>
         <TextView
-                android:text=" "
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/tvMeterE"
-                android:textColor="@color/black"/>
-        <TextView
-                android:text=" "
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/textView97"/>
-        <TextView
                 android:text="Kilometer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/textView93"/>
+        <TextView
+                android:text=" "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/tvKiloE"
+                android:textColor="@color/black"/>
         <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number|numberDecimal"
                 android:ems="10"
                 android:id="@+id/etKilo"/>
-        <TextView
-                android:text=" "
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/tvKiloE"
-                android:textColor="@color/black"/>
 
-        <TextView
-                android:text=" "
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/textView98"/>
         <Button
                 android:text="Berechne"
                 android:layout_width="match_parent"
