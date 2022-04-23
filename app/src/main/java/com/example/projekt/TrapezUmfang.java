@@ -16,6 +16,7 @@ public class TrapezUmfang extends AppCompatActivity {
     EditText etTUc;
     EditText etTUd;
     TextView tvTUe;
+    TextView tvTUeG;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +30,7 @@ public class TrapezUmfang extends AppCompatActivity {
         etTUc = findViewById(R.id.etTUc);
         etTUd = findViewById(R.id.etTUd);
         tvTUe = findViewById(R.id.tvTUe);
+        tvTUeG = findViewById(R.id.tvTUeG);
 
         btZurueckTU.setOnClickListener(View -> clickedZTU());
         btTUB.setOnClickListener(View -> clickedTUB());
@@ -43,6 +45,7 @@ public class TrapezUmfang extends AppCompatActivity {
 
         if (tuastr.length()==0||tubstr.length()==0||tucstr.length()==0||tudstr.length()==0){
             tvTUe.setText("Bitte alle geforderten Werte eintragen!");
+            tvTUeG.setText(" ");
         }
         else{
             double tua = Double.parseDouble(tuastr);
@@ -50,7 +53,13 @@ public class TrapezUmfang extends AppCompatActivity {
             double tuc = Double.parseDouble(tucstr);
             double tud = Double.parseDouble(tudstr);
             double tue = tua + tub + tuc + tud;
-            tvTUe.setText("Umfang: " + tue + "cm");
+            tvTUe.setText("Umfang: " + tue + " cm");
+
+            double tueg = tue * 100;
+            tueg = tueg +0.5;
+            tueg = (int) tueg;
+            tueg = (double) tueg / 100;
+            tvTUeG.setText("Ergebnis gerundet: "+ tueg + " cm");
         }
 
     }

@@ -18,6 +18,7 @@ public class PrismenTrapezOberflaeche extends AppCompatActivity {
     EditText etPriTOh;
     EditText etPriTOhk;
     TextView tvPriTOe;
+    TextView tvPriTOeG;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +34,7 @@ public class PrismenTrapezOberflaeche extends AppCompatActivity {
         etPriTOh = findViewById(R.id.etPriTOh);
         etPriTOhk = findViewById(R.id.etPriTOhk);
         tvPriTOe = findViewById(R.id.tvPriTOe);
+        tvPriTOeG = findViewById(R.id.tvPriTOeG);
 
         btZurueckPriTO.setOnClickListener(View -> clickedZPriTO());
         btPriTOB.setOnClickListener(View -> clickedPriTOB());
@@ -48,6 +50,7 @@ public class PrismenTrapezOberflaeche extends AppCompatActivity {
 
         if (priTOastr.length()==0||priTObstr.length()==0||priTOcstr.length()==0||priTOdstr.length()==0||priTOhstr.length()==0||priTOhkstr.length()==0){
             tvPriTOe.setText("Bitte alle geforderten Werte angeben!");
+            tvPriTOeG.setText(" ");
         }
         else{
             double pritoa = Double.parseDouble(priTOastr);
@@ -58,7 +61,12 @@ public class PrismenTrapezOberflaeche extends AppCompatActivity {
             double pritohk = Double.parseDouble(priTOhkstr);
             double pritoe = 0.5 * (pritoa + pritoc) * pritoh + (pritoa + pritob + pritoc + pritod) * pritohk;
 
-            tvPriTOe.setText("Oberflächeninhalt: " + pritoe + "cm²");
+            tvPriTOe.setText("Oberflächeninhalt: " + pritoe + " cm²");
+            double pritoeg = pritoe * 100;
+            pritoeg = pritoeg +0.5;
+            pritoeg = (int) pritoeg;
+            pritoeg = (double) pritoeg / 100;
+            tvPriTOeG.setText("Ergebnis gerundet: "+ pritoeg + " cm²");
         }
     }
 

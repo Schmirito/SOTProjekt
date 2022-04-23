@@ -20,7 +20,9 @@
     <TextView
             android:text="Formel: a³"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/textView37"/>
+            android:layout_height="wrap_content" android:id="@+id/textView37"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
     <ImageView
             android:layout_width="match_parent"
             android:layout_height="257dp" app:srcCompat="@drawable/w_rfel" android:id="@+id/imageView12"/>
@@ -40,6 +42,13 @@
             android:layout_height="wrap_content" android:id="@+id/btWVB"/>
     <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/tvWVe"/>
+            android:layout_height="wrap_content" android:id="@+id/tvWVe"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/tvWVeG"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
 </LinearLayout>
 </ScrollView>

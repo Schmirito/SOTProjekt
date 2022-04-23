@@ -13,6 +13,7 @@ public class WuerfelOberflaeche extends AppCompatActivity {
     Button btWOB;
     EditText etWOa;
     TextView tvWOe;
+    TextView tvWOeG;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,7 @@ public class WuerfelOberflaeche extends AppCompatActivity {
         btWOB = findViewById(R.id.btWOB);
         etWOa = findViewById(R.id.etWOa);
         tvWOe = findViewById(R.id.tvWOe);
+        tvWOeG = findViewById(R.id.tvWOeG);
 
         btZurueckWO.setOnClickListener(View -> clickedZWO());
         btWOB.setOnClickListener(View -> clickedWOB());
@@ -33,12 +35,19 @@ public class WuerfelOberflaeche extends AppCompatActivity {
 
         if (woastr.length()==0){
             tvWOe.setText("Bitte alle geforderten Werte eintragen!");
+            tvWOeG.setText(" ");
         }
         else{
             double woa = Double.parseDouble(woastr);
             double woe = 6 * (woa * woa);
 
-            tvWOe.setText("Oberflächeninhalt:" + woe + "cm²");
+            tvWOe.setText("Oberflächeninhalt:" + woe + " cm²");
+
+            double woeg = woe * 100;
+            woeg = woeg +0.5;
+            woeg = (int) woeg;
+            woeg = (double) woeg / 100;
+            tvWOeG.setText("Ergebnis gerundet: "+ woeg + " cm²");
         }
     }
 

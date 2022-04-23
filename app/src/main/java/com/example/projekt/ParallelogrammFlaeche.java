@@ -15,6 +15,7 @@ public class ParallelogrammFlaeche extends AppCompatActivity {
     EditText etParaFa;
     EditText etParaFha;
     TextView tvParaFe;
+    TextView tvParaFeG;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,7 @@ public class ParallelogrammFlaeche extends AppCompatActivity {
         etParaFa = findViewById(R.id.etParaFa);
         etParaFha = findViewById(R.id.etParaFha);
         tvParaFe = findViewById(R.id.tvParaFe);
+        tvParaFeG = findViewById(R.id.tvParaFeG);
 
         btZurueckParaF.setOnClickListener(View -> clickedZParaF());
         btParaFB.setOnClickListener(View -> clickedParaFB());
@@ -37,13 +39,22 @@ public class ParallelogrammFlaeche extends AppCompatActivity {
 
         if (parafastr.length()==0||parafhastr.length()==0){
             tvParaFe.setText("Bitte alle geforderten Werte eintragen!");
+            tvParaFeG.setText(" ");
         }
         else{
             double parafa = Double.parseDouble(parafastr);
             double parafha = Double.parseDouble(parafhastr);
             double parafe = parafa * parafha;
 
-            tvParaFe.setText("Flächeninhalt: " + parafe + "cm²");
+            tvParaFe.setText("Flächeninhalt: " + parafe + " cm²");
+
+            double parafeg = parafe * 100;
+            parafeg = parafeg +0.5;
+            parafeg = (int) parafeg;
+            parafeg = (double) parafeg / 100;
+            tvParaFeG.setText("Ergebnis gerundet: "+ parafeg + " cm²");
+
+
         }
     }
 

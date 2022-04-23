@@ -15,6 +15,7 @@ public class PyramideFuenfeckVolumen extends AppCompatActivity {
     EditText etPFVha;
     EditText etPFVh;
     TextView tvPFVe;
+    TextView tvPFVeG;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,7 @@ public class PyramideFuenfeckVolumen extends AppCompatActivity {
         etPFVha = findViewById(R.id.etPFVha);
         etPFVh = findViewById(R.id.etPFVh);
         tvPFVe = findViewById(R.id.tvPFVe);
+        tvPFVeG = findViewById(R.id.tvPFVeG);
 
         btZurueckPFV.setOnClickListener(Viw -> clickedZPFV());
         btPFVB.setOnClickListener(View -> clickedPFVB());
@@ -39,6 +41,7 @@ public class PyramideFuenfeckVolumen extends AppCompatActivity {
 
         if (pfvastr.length()==0||pfvhastr.length()==0||pfvhstr.length()==0){
             tvPFVe.setText("Bitte alle geforderten Werte eintragen!");
+            tvPFVeG.setText(" ");
         }
         else{
             double pfva = Double.parseDouble(pfvastr);
@@ -46,7 +49,13 @@ public class PyramideFuenfeckVolumen extends AppCompatActivity {
             double pfvha = Double.parseDouble(pfvhastr);
             double pfve = 0.33335 * 5 *(0.5 * pfva * pfvha) * pfvh;
 
-            tvPFVe.setText("Volumen: " + pfve + "cm³");
+            tvPFVe.setText("Volumen: " + pfve + " cm³");
+
+            double pfveg = pfve * 100;
+            pfveg = pfveg +0.5;
+            pfveg = (int) pfveg;
+            pfveg = (double) pfveg / 100;
+            tvPFVeG.setText("Ergebnis gerundet: "+ pfveg + " cm³");
         }
     }
 

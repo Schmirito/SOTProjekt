@@ -16,6 +16,7 @@ public class DreieckUmfang extends AppCompatActivity {
     EditText etDUc;
     Button btDUB;
     TextView tvDUE;
+    TextView tvDUEG;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +35,7 @@ public class DreieckUmfang extends AppCompatActivity {
         etDUb = findViewById(R.id.etDUb);
         etDUc = findViewById(R.id.etDUc);
         tvDUE = findViewById(R.id.tvDUE);
+        tvDUEG = findViewById(R.id.tvDUEG);
 
     }
 
@@ -46,6 +48,7 @@ public class DreieckUmfang extends AppCompatActivity {
 
         if (duastr.length()==0||dubstr.length()==0||ducstr.length()==0){
             tvDUE.setText("Bitte alle geforderten Werte eintragen!");
+            tvDUEG.setText(" ");
 
         }
         else {
@@ -53,7 +56,12 @@ public class DreieckUmfang extends AppCompatActivity {
             double dub = Double.parseDouble(dubstr);
             double duc = Double.parseDouble(ducstr);
             double due = dua + dub + duc;
-            tvDUE.setText("Umfang: " + due);
+            tvDUE.setText("Umfang: " + due + " cm");
+            double dueg = due * 100;
+            dueg = dueg +0.5;
+            dueg = (int) dueg;
+            dueg = (double) dueg / 100;
+            tvDUEG.setText("Ergebnis gerundet: "+ dueg + " cm");
         }
 
 

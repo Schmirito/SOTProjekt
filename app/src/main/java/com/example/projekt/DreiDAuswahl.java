@@ -13,6 +13,7 @@ public class DreiDAuswahl extends AppCompatActivity {
     Button btWuerfel;
     Button btPrismen;
     Button btKugel;
+    Button btKegel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,12 +25,19 @@ public class DreiDAuswahl extends AppCompatActivity {
         btWuerfel = findViewById(R.id.btWuerfel);
         btPrismen = findViewById(R.id.btPrismen);
         btKugel = findViewById(R.id.btKugel);
+        btKegel = findViewById(R.id.btKegel);
 
         btPyramide.setOnClickListener(View -> clickedPyramide());
         btZurueck3DA.setOnClickListener(View -> clickedZurueck3DA());
         btWuerfel.setOnClickListener(View -> clickedWuerfel());
         btPrismen.setOnClickListener(View -> clickedPrismen());
         btKugel.setOnClickListener(View -> clickedKugel());
+        btKegel.setOnClickListener(View -> clickedKegel());
+    }
+
+    private void clickedKegel() {
+        Intent iKegel = new Intent(this,KegelAuswahl.class);
+        startActivity(iKegel);
     }
 
     private void clickedKugel() {
@@ -48,7 +56,7 @@ public class DreiDAuswahl extends AppCompatActivity {
     }
 
     private void clickedZurueck3DA() {
-        Intent iZ3DA = new Intent(this,ErsteActivity.class);
+        Intent iZ3DA = new Intent(this,AuswahlDimension.class);
         startActivity(iZ3DA);
     }
 

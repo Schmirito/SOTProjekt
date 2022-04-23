@@ -16,6 +16,7 @@ public class PyramideDreieckOberflaeche extends AppCompatActivity {
     EditText etPDOd;
     EditText etPDOha;
     TextView tvPDOe;
+    TextView tvPDOeG;
 
 
     @Override
@@ -29,6 +30,7 @@ public class PyramideDreieckOberflaeche extends AppCompatActivity {
         etPDOd = findViewById(R.id.etPDOd);
         etPDOha = findViewById(R.id.etPDOha);
         tvPDOe = findViewById(R.id.tvPDOe);
+        tvPDOeG = findViewById(R.id.tvPDOeG);
 
         btZurueckPDOI.setOnClickListener(View -> clickedZPDOI());
         btPDOB.setOnClickListener(View -> clickedPDOB());
@@ -41,6 +43,7 @@ public class PyramideDreieckOberflaeche extends AppCompatActivity {
 
         if (pdoastr.length()==0||pdohastr.length()==0||pdodstr.length()==0){
             tvPDOe.setText("Bitte alle geforderten Werte eintragen");
+            tvPDOeG.setText(" ");
         }
         else{
             double pdoa = Double.parseDouble(pdoastr);
@@ -48,7 +51,12 @@ public class PyramideDreieckOberflaeche extends AppCompatActivity {
             double pdoha = Double.parseDouble(pdohastr);
             double pdoe = (0.5 * pdoa * pdod) + (3 * (0.5 * pdoa * pdoha));
 
-            tvPDOe.setText("Oberflächeninhalt: " + pdoe + "cm²");
+            tvPDOe.setText("Oberflächeninhalt: " + pdoe + " cm²");
+            double pdoeg = pdoe * 100;
+            pdoeg = pdoeg +0.5;
+            pdoeg = (int) pdoeg;
+            pdoeg = (double) pdoeg / 100;
+            tvPDOeG.setText("Ergebnis gerundet: "+ pdoeg + " cm²");
         }
     }
 

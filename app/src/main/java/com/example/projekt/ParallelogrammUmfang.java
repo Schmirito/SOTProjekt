@@ -14,6 +14,7 @@ public class ParallelogrammUmfang extends AppCompatActivity {
     EditText etParaUa;
     EditText etParaUb;
     TextView tvParaUe;
+    TextView tvParaUeG;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,7 @@ public class ParallelogrammUmfang extends AppCompatActivity {
         etParaUa = findViewById(R.id.etParaUa);
         etParaUb = findViewById(R.id.etParaUb);
         tvParaUe = findViewById(R.id.tvParaUe);
+        tvParaUeG = findViewById(R.id.tvParaUeG);
 
         btZurueckParaU.setOnClickListener(View -> clickedZParaU());
         btParaUB.setOnClickListener(View -> clickedParaUB());
@@ -36,13 +38,20 @@ public class ParallelogrammUmfang extends AppCompatActivity {
 
         if (parauastr.length()==0||paraubstr.length()==0){
             tvParaUe.setText("Bitte alle geforderten Werte angeben!");
+            tvParaUeG.setText(" ");
         }
         else{
             double paraua = Double.parseDouble(parauastr);
             double paraub = Double.parseDouble(paraubstr);
             double paraue = 2 * (paraua + paraub);
 
-            tvParaUe.setText("Umfang: " + paraue + "cm");
+            tvParaUe.setText("Umfang: " + paraue + " cm");
+
+            double paraueg = paraue * 100;
+            paraueg = paraueg +0.5;
+            paraueg = (int) paraueg;
+            paraueg = (double) paraueg / 100;
+            tvParaUeG.setText("Ergebnis gerundet: "+ paraueg + " cm");
         }
     }
 

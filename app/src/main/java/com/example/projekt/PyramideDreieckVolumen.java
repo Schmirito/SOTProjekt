@@ -15,6 +15,7 @@ public class PyramideDreieckVolumen extends AppCompatActivity {
     EditText etPDVd;
     EditText etPDVh;
     TextView tvPDVe;
+    TextView tvPDVeG;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,7 @@ public class PyramideDreieckVolumen extends AppCompatActivity {
         etPDVd = findViewById(R.id.etPDVd);
         etPDVh = findViewById(R.id.etPDVh);
         tvPDVe = findViewById(R.id.tvPDVe);
+        tvPDVeG = findViewById(R.id.tvPDVeG);
 
         btZurueckPDV.setOnClickListener(View -> clickedZPDV());
         btPDVB.setOnClickListener(View -> clickedPDVB());
@@ -39,6 +41,7 @@ public class PyramideDreieckVolumen extends AppCompatActivity {
 
         if (pdvastr.length()==0||pdvhstr.length()==0||pdvdstr.length()==0){
             tvPDVe.setText("Bitte alle geforderten Werte eintragen");
+            tvPDVeG.setText(" ");
         }
         else{
             double pdva = Double.parseDouble(pdvastr);
@@ -46,7 +49,13 @@ public class PyramideDreieckVolumen extends AppCompatActivity {
             double pdvh = Double.parseDouble(pdvhstr);
             double pdve = 0.33335 * (0.5 * pdva * pdvd) * pdvh;
 
-            tvPDVe.setText("Volumen: " + pdve + "cm³");
+            tvPDVe.setText("Volumen: " + pdve + " cm³");
+
+            double pdveg = pdve * 100;
+            pdveg = pdveg +0.5;
+            pdveg = (int) pdveg;
+            pdveg = (double) pdveg / 100;
+            tvPDVeG.setText("Ergebnis gerundet: "+ pdveg + " cm³");
         }
 
     }

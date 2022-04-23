@@ -12,6 +12,7 @@ public class KreisFlaeche extends AppCompatActivity {
     EditText etKFD;
     Button btKFB;
     TextView tvKFE;
+    TextView tvKFEG;
     double pi = Math.PI;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,7 @@ public class KreisFlaeche extends AppCompatActivity {
         btKFB = findViewById(R.id.btKFB);
         etKFD = findViewById(R.id.etKFD);
         tvKFE = findViewById(R.id.tvKFE);
+        tvKFEG = findViewById(R.id.tvKFEG);
 
         btZurueckKF.setOnClickListener(view -> clickedZKF());
         btKFB.setOnClickListener(view -> clickedKFB());
@@ -31,12 +33,19 @@ public class KreisFlaeche extends AppCompatActivity {
         String kfdstr = etKFD.getText().toString();
         if (kfdstr.length()==0){
             tvKFE.setText("Bitte alle geforderten Werte eintragen!");
+            tvKFEG.setText(" ");
 
         }
         else {
             double kfd = Double.parseDouble(kfdstr);
             double kfe = pi/4*kfd*kfd;
-            tvKFE.setText("Umfang: " + kfe + " cm");
+            tvKFE.setText("Umfang: " + kfe + " cm²");
+
+            double kfeg = kfe * 100;
+            kfeg = kfeg +0.5;
+            kfeg = (int) kfeg;
+            kfeg = (double) kfeg / 100;
+            tvKFEG.setText("Ergebnis gerundet: "+ kfeg + " cm²");
         }
     }
 

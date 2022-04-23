@@ -13,6 +13,7 @@ public class WuerfelVolumen extends AppCompatActivity {
     Button btWVB;
     EditText etWVa;
     TextView tvWVe;
+    TextView tvWVeG;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,7 @@ public class WuerfelVolumen extends AppCompatActivity {
         btZurueckWV = findViewById(R.id.btZurueckWV);
         btWVB = findViewById(R.id.btWVB);
         etWVa = findViewById(R.id.etWVa);
+        tvWVeG = findViewById(R.id.tvWVeG);
         tvWVe = findViewById(R.id.tvWVe);
 
         btZurueckWV.setOnClickListener(View -> clickedZWV());
@@ -33,12 +35,18 @@ public class WuerfelVolumen extends AppCompatActivity {
 
         if (wvastr.length()==0){
             tvWVe.setText("Bitte alle geforderten Werte angeben!");
+            tvWVeG.setText(" ");
         }
         else{
             double wva = Double.parseDouble(wvastr);
             double wve = wva * wva * wva;
 
-            tvWVe.setText("Volumen: " + wve + "cm³");
+            tvWVe.setText("Volumen: " + wve + " cm³");
+            double wveg = wve * 100;
+            wveg = wveg +0.5;
+            wveg = (int) wveg;
+            wveg = (double) wveg / 100;
+            tvWVeG.setText("Ergebnis gerundet: "+ wveg + " cm³");
         }
     }
 

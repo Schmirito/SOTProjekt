@@ -20,7 +20,9 @@
     <TextView
             android:text="Formel: 0.5 * (a + c) * h +(a + b + c + d) * hk"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/textView56"/>
+            android:layout_height="wrap_content" android:id="@+id/textView56"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
     <ImageView
             android:layout_width="match_parent"
             android:layout_height="86dp" app:srcCompat="@drawable/trapezfoermiges_prisma_aufgabe"
@@ -91,9 +93,14 @@
             android:layout_height="wrap_content" android:id="@+id/btPriTOB"/>
     <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/tvPriTOe"/>
+            android:layout_height="wrap_content" android:id="@+id/tvPriTOe"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
+    <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content" android:id="@+id/tvPriTOeG"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
 
 </LinearLayout>
 </ScrollView>

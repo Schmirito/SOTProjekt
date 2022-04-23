@@ -15,6 +15,7 @@ public class PrismenDreieckVolumen extends AppCompatActivity {
     EditText etPriDVha;
     EditText etPriDVh;
     TextView tvPriDVe;
+    TextView tvPriDVeG;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +28,8 @@ public class PrismenDreieckVolumen extends AppCompatActivity {
         etPriDVh = findViewById(R.id.etPriDVh);
         etPriDVha = findViewById(R.id.etPriDVha);
         tvPriDVe = findViewById(R.id.tvPriDVe);
-        
+        tvPriDVeG = findViewById(R.id.tvPriDVeg);
+
         btZurueckPriDV.setOnClickListener(View -> clickedZPriDV());
         btPriDVB.setOnClickListener(View -> clickedPriDVB());
     }
@@ -39,6 +41,7 @@ public class PrismenDreieckVolumen extends AppCompatActivity {
 
         if (pridvastr.length()==0||pridvhastr.length()==0||pridvhstr.length()==0){
             tvPriDVe.setText("Bitte alle erforderten Werte eingeben!");
+            tvPriDVeG.setText(" ");
         }
         else{
             double pridva = Double.parseDouble(pridvastr);
@@ -46,7 +49,13 @@ public class PrismenDreieckVolumen extends AppCompatActivity {
             double pridvh = Double.parseDouble(pridvhstr);
             double pridve = (0.5 * pridva * pridvha) * pridvh;
 
-            tvPriDVe.setText("Volumen: " + pridve + "cm³");
+            tvPriDVe.setText("Volumen: " + pridve + " cm³");
+
+            double pridveg = pridve * 100;
+            pridveg = pridveg +0.5;
+            pridveg = (int) pridveg;
+            pridveg = (double) pridveg / 100;
+            tvPriDVeG.setText("Ergebnis gerundet: "+ pridveg + " cm³");
         }
     }
 

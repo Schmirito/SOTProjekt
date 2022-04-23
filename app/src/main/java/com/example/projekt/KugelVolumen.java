@@ -12,6 +12,7 @@ public class KugelVolumen extends AppCompatActivity {
     EditText etKVD;
     Button btKVB;
     TextView tvKVE;
+    TextView tvKVEG;
     double pi = Math.PI;
 
 
@@ -23,6 +24,7 @@ public class KugelVolumen extends AppCompatActivity {
         btKVB = findViewById(R.id.btKVB);
         etKVD = findViewById(R.id.etKVD);
         tvKVE = findViewById(R.id.tvKVE);
+        tvKVEG = findViewById(R.id.tvKVEG);
 
         btZurueckKV.setOnClickListener(view -> clickedZKV());
         btKVB.setOnClickListener(view -> clickedKVB());
@@ -38,12 +40,19 @@ public class KugelVolumen extends AppCompatActivity {
 
         if (kvdstr.length() == 0) {
             tvKVE.setText("Bitte alle geforderten Werte eintragen!");
+            tvKVEG.setText(" ");
 
         }
         else {
             double kvd = Double.parseDouble(kvdstr);
-            double kve =pi*kvd*kvd*0.33333333333333333333333333333333333333333;
+            double kve =pi * (kvd * kvd) * 0.33333333333333333333333333333333333333333;
             tvKVE.setText("Volumen: " + kve + " cm³");
+
+            double kveg = kve * 100;
+            kveg = kveg +0.5;
+            kveg = (int) kveg;
+            kveg = (double) kveg / 100;
+            tvKVEG.setText("Ergebnis gerundet: "+ kveg + " cm³");
         }
     }
 

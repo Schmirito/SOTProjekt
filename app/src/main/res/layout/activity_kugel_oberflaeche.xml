@@ -1,31 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?>
 <ScrollView
         xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
         android:layout_height="wrap_content"
         android:fillViewport="false"
         android:layout_width="match_parent">
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
+            android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".KreisUmfang"
+        tools:context=".KugelOberflaeche"
         android:orientation="vertical"
         android:padding="16dp">
+
         <Button
                 android:text="zurück"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/btZurueckKU"/>
+                android:layout_height="wrap_content" android:id="@+id/btZurueckKO"/>
         <TextView
-                android:text="Formel: π*d"
+                android:text="Formel: π*d²"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/textView2"
                 android:textSize="17dp"
                 android:textColor="@color/black"/>
         <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" app:srcCompat="@drawable/kreis"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/kugel"
                 android:id="@+id/imageView2"/>
         <TextView
                 android:text="d:"
@@ -37,24 +35,23 @@
                 android:layout_height="wrap_content"
                 android:inputType="number|numberDecimal"
                 android:ems="10"
-                android:id="@+id/etKUD"/>
+                android:id="@+id/etKOD"/>
 
         <Button android:layout_width="match_parent" android:layout_height="wrap_content"
                 android:text="Berechne"
-                android:id="@+id/btKUB"/>
+                android:id="@+id/btKOB"/>
 
         <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/tvKUE"
+                android:layout_height="wrap_content" android:id="@+id/tvKOE"
                 android:textSize="17dp"
                 android:textColor="@color/black"/>
-
         <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/tvKUEG"
+                android:layout_height="wrap_content" android:id="@+id/tvKOEG"
                 android:textSize="17dp"
                 android:textColor="@color/black"/>
 
 
-</LinearLayout>
- </ScrollView>
+    </LinearLayout>
+</ScrollView>

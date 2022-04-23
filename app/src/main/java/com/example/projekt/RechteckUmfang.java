@@ -14,6 +14,7 @@ public class RechteckUmfang extends AppCompatActivity {
     EditText etRUa;
     EditText etRUb;
     TextView tvRUe;
+    TextView tvRUeG;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,7 @@ public class RechteckUmfang extends AppCompatActivity {
         etRUa = findViewById(R.id.etRUa);
         etRUb = findViewById(R.id.etRUb);
         tvRUe = findViewById(R.id.tvRUe);
+        tvRUeG = findViewById(R.id.tvRUeG);
 
         btZurueckRU.setOnClickListener(View -> clickedZRU());
         btRUB.setOnClickListener(View -> clickedRUB());
@@ -36,12 +38,19 @@ public class RechteckUmfang extends AppCompatActivity {
 
         if (ruastr.length()==0||rubstr.length()==0){
             tvRUe.setText("Bitte alle geforderten Werte eintragen!");
+            tvRUeG.setText(" ");
         }
         else {
             double rua = Double.parseDouble(ruastr);
             double rub = Double.parseDouble(rubstr);
             double rue = 2 * (rua + rub);
-            tvRUe.setText("Umfang: " + rue + "cm");
+            tvRUe.setText("Umfang: " + rue + " cm");
+
+            double rueg = rue * 100;
+            rueg = rueg +0.5;
+            rueg = (int) rueg;
+            rueg = (double) rueg / 100;
+            tvRUeG.setText("Ergebnis gerundet: "+ rueg + " cm");
         }
     }
 

@@ -20,7 +20,9 @@
     <TextView
             android:text="Formel: a² + 4 * (1/2 * a * ha)"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/textView34"/>
+            android:layout_height="wrap_content" android:id="@+id/textView34"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
     <ImageView
             android:layout_width="match_parent"
             android:layout_height="235dp" app:srcCompat="@drawable/viereckspyramide"
@@ -51,6 +53,13 @@
             android:layout_height="wrap_content" android:id="@+id/btPVOB"/>
     <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/tvPVOe"/>
+            android:layout_height="wrap_content" android:id="@+id/tvPVOe"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/tvPVOeG"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
 </LinearLayout>
 </ScrollView>

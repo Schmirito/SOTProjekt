@@ -20,7 +20,9 @@
     <TextView
             android:text="Formel: 2 * (a+b)"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/textView24"/>
+            android:layout_height="wrap_content" android:id="@+id/textView24"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
     <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content" app:srcCompat="@drawable/parallelogramm"
@@ -51,6 +53,13 @@
             android:layout_height="wrap_content" android:id="@+id/btParaUB"/>
     <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/tvParaUe"/>
+            android:layout_height="wrap_content" android:id="@+id/tvParaUe"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/tvParaUeG"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
 </LinearLayout>
 </ScrollView>

@@ -26,8 +26,8 @@
                 android:textSize="17dp"
                 android:textColor="@color/black"/>
         <ImageView
-                android:layout_width="378dp"
-                android:layout_height="370dp" app:srcCompat="@drawable/kugel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/kugel"
                 android:id="@+id/imageView2"/>
         <TextView
                 android:text="d:"
@@ -48,8 +48,13 @@
         <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/tvKVE"
-                android:textColor="@color/black"
-                android:textSize="20dp"/>
+                android:textSize="17dp"
+                android:textColor="@color/black"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/tvKVEG"
+                android:textSize="17dp"
+                android:textColor="@color/black"/>
 
 
     </LinearLayout>

@@ -68,7 +68,7 @@ public class ZweiDAuswahl extends AppCompatActivity {
     }
 
     private void clickedZurueck2D() {
-        Intent iZ2D = new Intent(this, ErsteActivity.class);
+        Intent iZ2D = new Intent(this, AuswahlDimension.class);
         startActivity(iZ2D);
     }
 }
